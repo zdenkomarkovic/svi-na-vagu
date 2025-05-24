@@ -9,34 +9,30 @@ const About2 = () => {
       <div className="container px-2 md:px-4 py-10 md:py-20 mx-auto flex flex-col md:flex-row gap-6 md:gap-20 items-center">
         <div className=" md:w-2/3 space-y-3 md:space-y-8">
           <h2 className="text-4xl font-bold md:text-6xl text-primary flex flex-col  text-center">
-            Šlep služba Čačak - Purić{" "}
-            <span className="text-2xl font-normal md:text-3xl  text-muted-foreground">
-              Do 10 tona nosivosti
-            </span>
+            Ko smo mi?
           </h2>
           <p className=" first-letter:pl-6 text-lg md:text-3xl">
-            Tražite{" "}
-            <span className="font-bold">pouzdanu šlep službu u Čačku</span> i
-            okolini? Naša profesionalna ekipa je dostupna 24/7 i spremna da vam
-            pomogne u bilo kojoj situaciji – bilo da je u pitanju{" "}
             <span className="font-bold">
-              kvar, saobraćajna nezgoda, probušena guma
+              Udruženje za prevenciju gojaznosti
             </span>{" "}
-            ili bilo koji drugi problem na putu.
+            Udruženje za prevenciju gojaznosti “
+            <span className="font-bold">Svi na vagu</span>” je nevladino i
+            neprofitno udruženje osnovano sa ciljem da probudi svest o važnosti
+            prevencije gojaznosti i usvajanja zdravih životnih navika.
           </p>
           <p className=" first-letter:pl-6 text-lg md:text-3xl">
-            Naša šlep služba pruža siguran i brz transport vozila na teritoriji
-            <span className="font-bold">
-              Čačka, Gornjeg Milanovca, Kraljeva, Užica i cele Srbije
-            </span>
-            . Bez obzira na to da li vam je potreban{" "}
-            <span className="font-bold">
-              prevoz automobila, kombija, motocikla ili lakših teretnih vozila
-            </span>
-            , posedujemo specijalizovana vozila i opremu za bezbedan transport.
+            Osnovano 2013. godine, udruženje je od samog početka usmereno na
+            edukaciju građana, promociju pravilne ishrane i pružanje besplatne
+            stručne pomoći putem merenja telesnog sastava i saveta stručnjaka.
+            Tokom godina, aktivnosti udruženja su obuhvatile hiljade građana
+            svih uzrasta.
           </p>
           <p className="first-letter:pl-6 text-lg md:text-3xl">
-            Kontaktirajte nas 24/7 i obezbedite siguran prevoz vašeg vozila.
+            Osnivač i inicijator udruženja je{" "}
+            <span className="font-bold">Milka Raičević</span>, zdravstveni
+            radnik, nutricionista i aromaterapeut sa višegodišnjim iskustvom u
+            radu sa ljudima koji žele da povrate kontrolu nad svojom telesnom
+            masom i zdravljem.
           </p>
         </div>
         <motion.div

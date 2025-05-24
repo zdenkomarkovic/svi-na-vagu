@@ -1,32 +1,42 @@
-import { Cards2Data, Cards2DataText } from "@/constants/index";
-import { CardHeader, CardContent, Card } from "./ui/card";
+import { Cards2Data } from "@/constants/index";
+import { CardContent, Card } from "./ui/card";
 import MotionComponent1 from "./MotionComponent1";
 
 const Cards2 = ({
   title,
   data,
   text,
+  cols,
 }: {
   title: string;
   data: Cards2Data[];
-  text: Cards2DataText;
+  text: string[];
+  cols: number;
 }) => {
   return (
     <div className="">
-      <div className="container px-5 mx-auto py-10 md:py-16 border-b-2 space-y-10 md:space-y-20">
-        <h2 className="text-4xl md:text-5xl text-center text-primary font-bold">
-          {title}
-        </h2>
-        <div className="grid md:grid-cols-3 text-center gap-6 md:gap-8 items-stretch">
+      <div className="container px-5 mx-auto py-10 md:py-16 border-t-2 space-y-10 md:space-y-10">
+        <h2 className="">{title}</h2>
+        <div>
+          {text.map((text, i) => {
+            return (
+              <p key={i} className=" py-3">
+                {text}
+              </p>
+            );
+          })}
+        </div>
+        <div
+          className={`grid md:grid-cols-${cols} text-center gap-6 md:gap-8 items-stretch`}
+        >
           {data.map((item) => {
             return (
               <MotionComponent1 key={item.id}>
-                <OneCard key={item.id} item={item} />;
+                <OneCard key={item.id} item={item} />
               </MotionComponent1>
             );
           })}
         </div>
-        <p className="first-letter:pl-6 text-xl md:text-3xl">{text.text}</p>
       </div>
     </div>
   );
@@ -35,17 +45,11 @@ const Cards2 = ({
 export default Cards2;
 
 const OneCard = ({ item }: { item: Cards2Data }) => {
-  const IconComponent = item.icon;
-
   return (
     <Card className="h-full">
-      <CardHeader className=""></CardHeader>
-      <CardContent className="flex gap-5 items-center text-xl md:text-3xl justify-start">
-        <div className=" md:text-4xl text-primary ">
-          {" "}
-          <IconComponent className="text-4xl md:text-6xl" />
-        </div>
-        <p className="text-left">{item.title}</p>
+      <CardContent className="">
+        <p className="text-4xl pr-5 font-semibold text-primary">?</p>{" "}
+        <p className="">{item.title}</p>
       </CardContent>
     </Card>
   );

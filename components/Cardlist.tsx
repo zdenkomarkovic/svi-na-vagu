@@ -10,7 +10,7 @@ const Cardlist = () => {
     <div className="py-20">
       <div className="container px-2 md:px-4 mx-auto space-y-10">
         <h2 className="text-6xl text-primary text-center  font-gagalin">
-          Lucky fitnes sa vama od 2012
+          Šta nudimo?
         </h2>
         <p></p>
         <div className=" flex flex-col gap-4 md:gap-6 overflow-hidden">

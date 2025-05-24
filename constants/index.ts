@@ -14,6 +14,10 @@ export const navList = [
     link: "/",
   },
   {
+    title: "O nama",
+    link: "/o-nama",
+  },
+  {
     title: "Usluge",
     list: [
       {
@@ -34,10 +38,7 @@ export const navList = [
       },
     ],
   },
-  {
-    title: "Proizvodi",
-    link: "/proizvodi",
-  },
+
   {
     title: "Kontakt",
     link: "/kontakt",
@@ -53,39 +54,27 @@ export interface WorkList {
 export const workList = [
   {
     id: 1,
-    title: "Grupni treninzi",
-    text: "Oblikuj svoje telo i poboljšaj kondiciju uz dinamične grupne treninge! Vežbaj u motivišućem okruženju, uz stručno vođstvo i podršku tima. Pridruži se i zajedno postižemo ciljeve!",
+    title: "Savete u vezi ishrane",
+    text: "Personalizovani pristup ishrani, prilagođen vašim navikama i potrebama. Učimo vas da ne brojite kalorije - već da razumete hranu.",
     icon: IoIosPeople,
   },
   {
     id: 2,
-    title: "Individualni treninzi",
-    text: "Ostvari maksimalne rezultate uz personalizovane individualne treninge! Treniraj prema svom tempu, uz stručnu podršku i plan prilagođen tvojim ciljevima. Fokus je na tebi!",
+    title: "Merenje telesnog sastava",
+    text: "Pomoću specijalizovane opreme vršimo merenja kao što su: procenat telesne masti, mišićne mase, vode i obim struka - kao rani pokazatelji zdravstvenih rizika.",
     icon: IoIosPerson,
   },
   {
     id: 3,
-    title: "Pilates",
-    text: "Poboljšaj fleksibilnost, snagu i držanje uz pilates treninge! Uz kontrolisane pokrete i fokus na disanje, oblikuj telo i oslobodi se stresa. Idealno za sve nivoe kondicije!",
+    title: "Edukacija o suplementima i dijetama",
+    text: "Koji suplementi imaju smisla? Kako sprovesti dijetu bez stresa i rizika? Kroz predavanja i individualni rad pomažemo vam da se snađete u moru informacija.",
     icon: IoFitnessOutline,
   },
   {
     id: 4,
-    title: "Body power",
-    text: "Ojačaj mišiće i poboljšaj izdržljivost uz intenzivan trening snage! Kombinacija tegova i funkcionalnih vežbi pomoći će ti da postigneš vrhunsku formu.",
+    title: "Aromaterapija kao podrška",
+    text: "Prirodna podrška u borbi protiv stresa, emocionalnog prejedanja i nesanice - stanja koja često prate gojaznost.",
     icon: GiWeightLiftingUp,
-  },
-  {
-    id: 5,
-    title: "Mix-fit",
-    text: " Dinamičan spoj kardio i snage za maksimalne rezultate! Raznovrsni pokreti, visoka energija i zabavna atmosfera čine svaki trening izazovnim i efektivnim.",
-    icon: MdOutlineSportsGymnastics,
-  },
-  {
-    id: 6,
-    title: "Aeronix",
-    text: "Spoj aerobnih vežbi i funkcionalnog treninga za bolju kondiciju i oblikovanje tela! Povećaj izdržljivost, sagori kalorije i uživaj u energičnom ritmu vežbanja.",
-    icon: PiRocketLaunchBold,
   },
 ];
 
@@ -249,29 +238,33 @@ export const cards2Data: Cards2Data[] = [
   {
     id: 1,
     icon: GiWeight,
-    title: "Elektroinstalacije",
+    title: "kako gojaznost nastaje",
     text: "",
   },
   {
     id: 2,
     icon: GiWeight,
-    title: "Elektro ormani",
+    title: "kako pravilna ishrana utiče na zdravlje,",
     text: "",
   },
   {
     id: 3,
     icon: GiWeight,
-    title: "Industrijski elektro ormani",
+    title: "šta su kalorije i kako ih organizam koristi,",
+    text: "",
+  },
+  {
+    id: 4,
+    icon: GiWeight,
+    title: "kako pravilno primenjivati dijete i dodatke ishrani.",
     text: "",
   },
 ];
 
-export interface Cards2DataText {
-  text: string;
-}
-export const cards2DataText: Cards2DataText = {
-  text: "Pružamo usluge izrade, montaže i održavanja elektro ormana za domaćinstva, poslovne prostore i industrijska postrojenja. Naš tim vodi računa o kvalitetu instalacija i bezbednosti sistema, uz poštovanje svih standarda i propisa.",
-};
+export const cards2DataText: string[] = [
+  "Gojaznost je postala bolest savremenog doba - tiha epidemija koja utiče na sve veći broj ljudi, uključujući i decu. Naša misija je da kroz edukaciju, prevenciju i stručnu podršku pomognemo ljudima da naprave trajne promene koje vode ka zdravijem životu.",
+  "Kroz brojne projekte, događaje, javna vaganja i savetovanja, pomažemo građanima da razumeju:",
+];
 
 export interface Tim {
   name: string;

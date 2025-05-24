@@ -5,12 +5,18 @@ import { PhoneIcon } from "lucide-react";
 
 const PozoviteNasOdmah = () => {
   return (
-    <div className="bg-foreground text-primary mt-10 md:mt-20 py-10 md:py-20">
-      <div className="container px-2 md:px-4 mx-auto font-bold flex flex-col md:flex-row items-center gap-10 md:gap-20">
-        <h2 className="text-xl md:text-4xl text-center ">
-          Šlep služba Purić Čačak brza, povoljna i bezbedna šlep služba je tu za
-          vas 24h dnevno, tokom cele godine godine.
-        </h2>
+    <div className="bg-foreground text-muted mt-10 md:mt-10 py-10 md:py-14">
+      <div className="container px-2 md:px-4 mx-auto flex flex-col md:flex-row items-center gap-10 md:gap-20">
+        <div className="space-y-3">
+          <p>Želite da znate više o svom telesnom sastavu?</p>
+          <p>Niste sigurni kako da započnete promene?</p>
+          <p>Potrebna vam je stručna, ali ljudska podrška?</p>
+          <p className="text-3xl text-primary">
+            Pridružite se udruženju “{" "}
+            <span className="font-bold">Svi na vagu</span> ”! Zakažite besplatno
+            savetovanje i napravite prvi korak ka zdravlju.
+          </p>
+        </div>
         <a href="tel:+381659480700">
           <motion.button
             whileHover={{ translateY: "-5px" }}
