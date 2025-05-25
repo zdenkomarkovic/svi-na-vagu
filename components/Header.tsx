@@ -175,7 +175,9 @@ export default function Header() {
               color: "hsl(var(--foreground))",
               backgroundColor: "hsl(var(--primary))",
             }}
-            className=" items-center justify-center rounded-full border-2 text-sm md:text-lg py-1 px-2 md:py-2 md:px-4 transition-colors flex"
+            className={`items-center justify-center rounded-full ${
+              scrolled ? "border-primary" : "border-white"
+            } border-2 text-sm md:text-lg py-1 px-2 md:py-2 md:px-4 transition-colors flex`}
           >
             <PhoneIcon />
             <p className="">+38160 000 000</p>

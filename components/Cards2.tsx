@@ -15,7 +15,7 @@ const Cards2 = ({
 }) => {
   return (
     <div className="">
-      <div className="container px-5 mx-auto py-10 md:py-16 border-t-2 space-y-10 md:space-y-10">
+      <div className="container px-2 md:px-4 mx-auto py-10 md:py-16 border-t-2 space-y-3 md:space-y-10">
         <h2 className="">{title}</h2>
         <div>
           {text.map((text, i) => {

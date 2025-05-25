@@ -18,8 +18,10 @@ const Hero = () => {
       <div className="relative container px-2 md:px-4 mx-auto  flex flex-col gap-6 items-center justify-center z-[1] ">
         <h1 className="text-muted md:text-7xl text-xl px-4 text-center">
           Udruženje{" "}
-          <span className="text-primary font-semibold">Svi na vagu</span> - Vaš
-          prvi korak ka zdravlju
+          <span className="text-primary font-semibold text-2xl md:text-8xl">
+            Svi na vagu
+          </span>{" "}
+          - Vaš prvi korak ka zdravlju
         </h1>
         <h2 className="text-muted font-medium md:text-5xl text-md">
           Osnivač Milka Raičević, nutricionista i aromaterapeut, vodi vas kroz

@@ -6,7 +6,7 @@ import { Facebook, Instagram } from "lucide-react";
 export default function Footer() {
   return (
     <motion.footer
-      className=" py-8  shadow-[0px_-2px_5px_rgba(0,0,0,0.1)]"
+      className=" py-8 bg-foreground text-muted shadow-[0px_-2px_5px_rgba(0,0,0,0.1)]"
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ delay: 0.5 }}
@@ -22,8 +22,8 @@ export default function Footer() {
               </li>
 
               <li>
-                <Link href="/usluge" className=" hover:text-primary">
-                  Usluge
+                <Link href="/o-nama" className=" hover:text-primary">
+                  O nama
                 </Link>
               </li>
 

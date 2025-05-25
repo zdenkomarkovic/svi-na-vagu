@@ -7,11 +7,9 @@ import { Card, CardHeader, CardTitle, CardContent } from "./ui/card";
 
 const Cardlist = () => {
   return (
-    <div className="py-20">
-      <div className="container px-2 md:px-4 mx-auto space-y-10">
-        <h2 className="text-6xl text-primary text-center  font-gagalin">
-          Šta nudimo?
-        </h2>
+    <div className="py-6 md:py-20">
+      <div className="container px-2 md:px-4 mx-auto space-y-6 md:space-y-10">
+        <h2 className="text-4xl md:text-6xl">Šta nudimo?</h2>
         <p></p>
         <div className=" flex flex-col gap-4 md:gap-6 overflow-hidden">
           {workList.map((item, index) => {
