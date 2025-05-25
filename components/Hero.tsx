@@ -9,7 +9,7 @@ import {
 import Fade from "embla-carousel-fade";
 import Autoplay from "embla-carousel-autoplay";
 
-import Hero1 from "../public/hero1.jpg";
+import Hero1 from "../public/BF_BG_Svi_Na_Vagu_880x542px.png";
 import Hero2 from "../public/hero2.jpg";
 import Hero3 from "../public/hero3.jpg";
 

@@ -43,10 +43,10 @@ const About2 = () => {
           className="rounded-3xl overflow-hidden  md:w-1/3"
         >
           <Image
-            src={"/puric.jpg"}
+            src={"/about2.jpg"}
             width={500}
             height={800}
-            alt="slep puric cacak "
+            alt="svi na vagu"
             className="object-cover h-[300px] md:h-full"
           />
         </motion.div>
