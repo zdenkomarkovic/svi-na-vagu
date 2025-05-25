@@ -12,13 +12,14 @@ const About2 = () => {
             Ko smo mi?
           </h2>
           <p className=" first-letter:pl-6 text-lg md:text-3xl">
-            <span className="font-bold">
+            <span className="font-bold text-primary">
               Udruženje za prevenciju gojaznosti
             </span>{" "}
             Udruženje za prevenciju gojaznosti “
-            <span className="font-bold">Svi na vagu</span>” je nevladino i
-            neprofitno udruženje osnovano sa ciljem da probudi svest o važnosti
-            prevencije gojaznosti i usvajanja zdravih životnih navika.
+            <span className="font-bold text-primary">Svi na vagu</span>” je
+            nevladino i neprofitno udruženje osnovano sa ciljem da probudi svest
+            o važnosti prevencije gojaznosti i usvajanja zdravih životnih
+            navika.
           </p>
           <p className=" first-letter:pl-6 text-lg md:text-3xl">
             Osnovano 2013. godine, udruženje je od samog početka usmereno na
@@ -29,10 +30,10 @@ const About2 = () => {
           </p>
           <p className="first-letter:pl-6 text-lg md:text-3xl">
             Osnivač i inicijator udruženja je{" "}
-            <span className="font-bold">Milka Raičević</span>, zdravstveni
-            radnik, nutricionista i aromaterapeut sa višegodišnjim iskustvom u
-            radu sa ljudima koji žele da povrate kontrolu nad svojom telesnom
-            masom i zdravljem.
+            <span className="font-bold text-primary">Milka Raičević</span>,
+            zdravstveni radnik, nutricionista i aromaterapeut sa višegodišnjim
+            iskustvom u radu sa ljudima koji žele da povrate kontrolu nad svojom
+            telesnom masom i zdravljem.
           </p>
         </div>
         <motion.div

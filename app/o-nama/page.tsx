@@ -1,9 +1,10 @@
+import Image from "@/node_modules/next/image";
 import React from "react";
 
 const page = () => {
   return (
-    <div className="container px-2 md:px-4 mx-auto py-24 space-y-7">
-      <h1 className="text-primary text-center text-5xl font-bold">
+    <div className="container px-2 md:px-4 mx-auto pb-8 pt-24 space-y-3 md:space-y-7">
+      <h1 className="text-primary text-center text-3xl md:text-5xl font-bold">
         Udruženje “Svi na vagu”
       </h1>
       <p className="first-letter:pl-6">
@@ -70,19 +71,30 @@ const page = () => {
         <li> - Usvoje rutinu zdravog života bez stresa i restrikcija.</li>
       </ul>
 
-      <h2>O osnivaču</h2>
-      <p className="first-letter:pl-6">
-        <span className="font-bold text-primary">Milka Raičević</span> je
-        nutricionista, aromaterapeut i zdravstveni radnik sa više od 20 godina
-        iskustva u oblasti dijetetike i prevencije bolesti. Kroz svoj rad u
-        javnim ustanovama i privatnim savetovalištima, razvila je jedinstven
-        pristup koji kombinuje nauku, empatiju i podršku.
-      </p>
-      <p className="first-letter:pl-6">
-        Kao osnivač udruženja “Svi na vagu”, Milka aktivno učestvuje u svim
-        događajima, pruža individualne savete, vodi edukacije i usmerava rad
-        udruženja ka realnim, praktičnim i održivim ciljevima.
-      </p>
+      <div className="flex flex-col-reverse md:flex-row gap-4 md:gap-20 items-center p-4 md:p-16 border border-primary rounded-xl">
+        <Image
+          src={"/33111440_2027838250808728_2028944715293917184_n.jpg"}
+          width={500}
+          height={500}
+          alt="svi na vagu"
+          className="w-full md:w-[500px] aspect-square object-cover rounded-xl"
+        />
+        <div className="flex flex-col md:h-[500px] justify-around  space-y-3 md:space-y-0">
+          <h2>O osnivaču</h2>
+          <p className="first-letter:pl-6">
+            <span className="font-bold text-primary">Milka Raičević</span> je
+            nutricionista, aromaterapeut i zdravstveni radnik sa više od 20
+            godina iskustva u oblasti dijetetike i prevencije bolesti. Kroz svoj
+            rad u javnim ustanovama i privatnim savetovalištima, razvila je
+            jedinstven pristup koji kombinuje nauku, empatiju i podršku.
+          </p>
+          <p className="first-letter:pl-6">
+            Kao osnivač udruženja “Svi na vagu”, Milka aktivno učestvuje u svim
+            događajima, pruža individualne savete, vodi edukacije i usmerava rad
+            udruženja ka realnim, praktičnim i održivim ciljevima.
+          </p>
+        </div>
+      </div>
       <h2>Šta želimo da postignemo?</h2>
       <p className="first-letter:pl-6">
         Naš krajnji cilj je{" "}

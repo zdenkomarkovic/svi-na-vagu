@@ -2,10 +2,8 @@ import { IconType } from "react-icons";
 import { GiWeightLiftingUp } from "react-icons/gi";
 import { GiWeight } from "react-icons/gi";
 import { IoFitnessOutline } from "react-icons/io5";
-import { MdOutlineSportsGymnastics } from "react-icons/md";
 import { IoIosPeople } from "react-icons/io";
 import { IoIosPerson } from "react-icons/io";
-import { PiRocketLaunchBold } from "react-icons/pi";
 import { LuTimerReset } from "react-icons/lu";
 
 export const navList = [
@@ -17,28 +15,6 @@ export const navList = [
     title: "O nama",
     link: "/o-nama",
   },
-  {
-    title: "Usluge",
-    list: [
-      {
-        title: "Kuhinje",
-        link: "",
-      },
-      {
-        title: "Plakari",
-        link: "",
-      },
-      {
-        title: "TV Komode",
-        link: "",
-      },
-      {
-        title: "Projektovanje Enterijera",
-        link: "",
-      },
-    ],
-  },
-
   {
     title: "Kontakt",
     link: "/kontakt",

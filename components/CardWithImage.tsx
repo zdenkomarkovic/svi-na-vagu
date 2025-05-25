@@ -3,12 +3,12 @@ import React from "react";
 
 const CardWithImage = () => {
   return (
-    <div className="container px-2 md:px-4 mx-auto text-center md:py-20 space-y-10 ">
+    <div className="container px-2 md:px-4 mx-auto text-center py-6 md:py-20 space-y-6 md:space-y-10 ">
       <h2 className="">
         Tokom godina, Udruženje je sprovelo niz aktivnosti širom Srbije,
         uključujući:
       </h2>
-      <div className="flex flex-col md:flex-row md:gap-20  items-stretch ">
+      <div className="flex flex-col md:flex-row md:gap-20 space-y-4 items-stretch ">
         <div>
           <Image
             src={"/72673884_719774845100502_4918049982726012928_n.jpg"}
@@ -18,7 +18,7 @@ const CardWithImage = () => {
             className=" object-cover rounded-xl"
           />
         </div>
-        <div className="flex flex-col gap-2 md:gap-0 py-8 md:py-12 md:justify-around text-left">
+        <div className="flex flex-col gap-2 md:gap-0 md:py-12 md:justify-around text-left">
           <p className="">
             - Javna merenja telesnog sastava na specijalizovanim vagama
           </p>
