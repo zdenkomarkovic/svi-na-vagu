@@ -4,61 +4,41 @@ import { FaRegCircleCheck } from "react-icons/fa6";
 
 const CardWithImage = () => {
   return (
-    <div className="container px-2 md:px-4 mx-auto text-right md:py-20 ">
-      <h2 className="text-2xl md:text-5xl text-primary font-bold py-6">
-        POVOLJNA CENA I BRZA USLUGA ŠLEPANJA VOZILA U ZEMLJI I INOSTRANSTVU
+    <div className="container px-2 md:px-4 mx-auto text-center md:py-20 space-y-10 ">
+      <h2 className="">
+        Tokom godina, Udruženje je sprovelo niz aktivnosti širom Srbije,
+        uključujući:
       </h2>
       <div className="flex flex-col md:flex-row md:gap-20  items-stretch ">
         <div>
           <Image
-            src={"/puric slep.jpg"}
-            width={700}
-            height={700}
+            src={"/72673884_719774845100502_4918049982726012928_n.jpg"}
+            width={600}
+            height={600}
             alt="slep cacak"
-            className="rounded-xl md:rounded-l-full"
+            className=" object-cover rounded-xl"
           />
         </div>
-        <div className="flex flex-col gap-2 md:gap-0 py-8 md:py-20 md:justify-between text-left text-xl md:text-3xl">
-          <p className="flex gap-5 items-center">
-            {" "}
-            <span className="text-primary text-4xl md:text-5xl bg-muted-foreground rounded-full">
-              <FaRegCircleCheck />
-            </span>{" "}
-            Treba vam pomoć na putu?
+        <div className="flex flex-col gap-2 md:gap-0 py-8 md:py-12 md:justify-around text-left">
+          <p className="">
+            - Javna merenja telesnog sastava na specijalizovanim vagama
           </p>
-          <p className="flex gap-5 items-center">
-            {" "}
-            <span className="text-primary text-4xl md:text-5xl bg-muted-foreground rounded-full">
-              <FaRegCircleCheck />
-            </span>
-            U svakom trenutku spremni 24h dnevno
+          <p className="">
+            - Besplatno savetovanje sa nutricionistima i lekarima
           </p>
-          <p className="flex gap-5 items-center">
-            <span className="text-primary text-4xl md:text-5xl bg-muted-foreground rounded-full">
-              <FaRegCircleCheck />
-            </span>
-            Povoljne cene
+          <p className=""> - Edukativne radionice i seminare za sve uzraste</p>
+          <p className=""> - Učešće na festivalima zdravlja i sajmovima</p>
+          <p className="">
+            - Objavljivanje stručnih i popularnih tekstova o ishrani,
+            suplementima i zdravlju
           </p>
-          <p className="flex gap-5 items-center">
-            <span className="text-primary text-4xl md:text-5xl bg-muted-foreground rounded-full">
-              <FaRegCircleCheck />
-            </span>
-            Profesionalna usluga
-          </p>
-          <p className="flex gap-5 items-center">
-            <span className="text-primary text-4xl md:text-5xl bg-muted-foreground rounded-full">
-              <FaRegCircleCheck />
-            </span>
-            Dugogodisnje iskustvo
-          </p>
-          <p className="flex gap-5 items-center">
-            <span className="text-primary text-4xl md:text-5xl bg-muted-foreground rounded-full">
-              <FaRegCircleCheck />
-            </span>
-            Poštujemo vaše vreme
-          </p>
+          <p className=""> - Organizaciju stručnih skupova i konferencija</p>
         </div>
       </div>
+      <p>
+        Svi naši programi su otvoreni, inkluzivni i besplatni za sve građane,
+        bez obzira na uzrast, pol ili prethodno iskustvo.
+      </p>
     </div>
   );
 };

@@ -1,9 +1,7 @@
 "use client";
 
-import Hero3 from "../public/hero3.jpg";
+import Hero3 from "../public/BF_BG_Svi_Na_Vagu_880x542px.png";
 import Image from "next/image";
-import { ArrowRightIcon } from "lucide-react";
-import Link from "next/link";
 import { motion } from "framer-motion";
 
 const Hero = () => {
