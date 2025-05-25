@@ -1,6 +1,5 @@
 import Image from "@/node_modules/next/image";
 import React from "react";
-import { FaRegCircleCheck } from "react-icons/fa6";
 
 const CardWithImage = () => {
   return (
