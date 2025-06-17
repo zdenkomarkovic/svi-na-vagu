@@ -8,27 +8,26 @@ const About2 = () => {
     <div>
       <div className="container px-2 md:px-4 py-10 md:py-20 mx-auto flex flex-col md:flex-row gap-6 md:gap-20 items-center">
         <div className=" md:w-2/3 space-y-3 md:space-y-8">
-          <h2 className="text-4xl font-bold md:text-6xl text-primary flex flex-col  text-center">
+          <h2 className=" font-bold text-primary flex flex-col  text-center">
             Ko smo mi?
           </h2>
-          <p className=" first-letter:pl-6 text-lg md:text-3xl">
+          <p className=" first-letter:pl-6">
             <span className="font-bold text-primary">
               Udruženje za prevenciju gojaznosti
             </span>{" "}
-            Udruženje za prevenciju gojaznosti “
-            <span className="font-bold text-primary">Svi na vagu</span>” je
+            “<span className="font-bold text-primary">Svi na vagu</span>” je
             nevladino i neprofitno udruženje osnovano sa ciljem da probudi svest
             o važnosti prevencije gojaznosti i usvajanja zdravih životnih
             navika.
           </p>
-          <p className=" first-letter:pl-6 text-lg md:text-3xl">
+          <p className=" first-letter:pl-6">
             Osnovano 2013. godine, udruženje je od samog početka usmereno na
             edukaciju građana, promociju pravilne ishrane i pružanje besplatne
             stručne pomoći putem merenja telesnog sastava i saveta stručnjaka.
             Tokom godina, aktivnosti udruženja su obuhvatile hiljade građana
             svih uzrasta.
           </p>
-          <p className="first-letter:pl-6 text-lg md:text-3xl">
+          <p className="first-letter:pl-6">
             Osnivač i inicijator udruženja je{" "}
             <span className="font-bold text-primary">Milka Raičević</span>,
             zdravstveni radnik, nutricionista i aromaterapeut sa višegodišnjim
@@ -46,7 +45,7 @@ const About2 = () => {
           <Image
             src={"/about2.jpg"}
             width={500}
-            height={800}
+            height={600}
             alt="svi na vagu"
             className="object-cover h-[300px] md:h-full"
           />

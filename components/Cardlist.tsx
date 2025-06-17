@@ -26,7 +26,7 @@ const Cardlist = () => {
               >
                 <Card className="  md:w-3/4 shadow-lg md:p-5">
                   <CardHeader>
-                    <CardTitle className="font-gagalin flex gap-5 text-2xl md:text-5xl items-center mx-auto text-primary">
+                    <CardTitle className="font-gagalin flex gap-5 text-2xl md:text-4xl items-center mx-auto text-primary">
                       <span className="text-4xl md:text-8xl">
                         {<item.icon />}
                       </span>
@@ -34,7 +34,7 @@ const Cardlist = () => {
                     </CardTitle>
                   </CardHeader>
                   <CardContent className="space-y-6">
-                    <p className=" first-letter:pl-6 text-xl md:text-4xl">
+                    <p className=" first-letter:pl-6 text-xl md:text-3xl">
                       {item.text}
                     </p>
                   </CardContent>
