@@ -64,7 +64,7 @@ const Manifestacije = () => {
           savete – već postaju deo analiza i stručne edukacije. Rezultati se
           prezentuju na konferencijama i stručnim skupovima, kako bi se ukazalo
           na urgentnu potrebu za prevencijom gojaznosti i usvajanjem zdravih
-          navika već od najranijeg uzrasta..
+          navika već od najranijeg uzrasta.
         </p>
         <div className="mt-3">
           <ImageCarusel />
