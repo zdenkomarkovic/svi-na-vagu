@@ -1,5 +1,5 @@
 import React from "react";
-import ImageCarusel from "./ImageCarusel";
+import ImageCarusel from "./Imagecarusel";
 
 const Manifestacije = () => {
   return (
