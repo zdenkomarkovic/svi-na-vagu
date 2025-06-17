@@ -101,7 +101,7 @@ export default function Contact() {
                 </button>
               </a>
               <a
-                href=""
+                href="https://www.instagram.com/svi_na_vagu"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="py-[7px] flex border-b-[1px] border-primary "
@@ -109,11 +109,11 @@ export default function Contact() {
                 <button className="hover:scale-110 transition-transform duration-500 px-4 md:px-8 flex gap-4 items-center">
                   {" "}
                   <FaInstagram className=" text-[28px] lg:text-[30px]" />
-                  manikam_starter
+                  svi_na_vagu
                 </button>
               </a>
               <a
-                href=""
+                href="https://www.facebook.com/svinavagu"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="py-[7px] flex border-b-[1px] border-primary "
@@ -121,7 +121,7 @@ export default function Contact() {
                 <button className="hover:scale-110 transition-transform duration-500 px-4 md:px-8 flex gap-4 items-center">
                   {" "}
                   <Facebook className=" text-[28px] lg:text-[30px]" />
-                  Manikam Starter
+                  Svi na vagu
                 </button>
               </a>
             </div>
