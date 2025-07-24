@@ -71,29 +71,52 @@ const page = () => {
         <li> - Usvoje rutinu zdravog života bez stresa i restrikcija.</li>
       </ul>
 
-      <div className="flex flex-col-reverse md:flex-row gap-4 md:gap-20 items-center p-4 md:p-16 border border-primary rounded-xl">
-        <Image
-          src={"/33111440_2027838250808728_2028944715293917184_n.jpg"}
-          width={500}
-          height={500}
-          alt="svi na vagu"
-          className="w-full md:w-[500px] aspect-square object-cover rounded-xl"
-        />
-        <div className="flex flex-col md:h-[500px] justify-around  space-y-3 md:space-y-0">
-          <h2>O osnivaču</h2>
-          <p className="first-letter:pl-6">
-            <span className="font-bold text-primary">Milka Raičević</span> je
-            nutricionista, aromaterapeut i zdravstveni radnik sa više od 20
-            godina iskustva u oblasti dijetetike i prevencije bolesti. Kroz svoj
-            rad u javnim ustanovama i privatnim savetovalištima, razvila je
-            jedinstven pristup koji kombinuje nauku, empatiju i podršku.
-          </p>
-          <p className="first-letter:pl-6">
-            Kao osnivač udruženja “Svi na vagu”, Milka aktivno učestvuje u svim
-            događajima, pruža individualne savete, vodi edukacije i usmerava rad
-            udruženja ka realnim, praktičnim i održivim ciljevima.
-          </p>
+      <div className="border border-primary rounded-xl p-4 md:p-10 my-8">
+        <h2 className="">
+         
+          O osnivaču - Milka Raičević
+        </h2>
+        <div className="text-center mb-6">
+          <span className="block text-xl md:text-2xl font-bold text-primary"></span>
+          <span className="block text-base md:text-lg font-semibold text-gray-700">DIJETETIČAR - NUTRICIONISTA</span>
+          <span className="block text-base md:text-lg text-gray-600">Dugogodišnje iskustvo u oblasti dijetetike i javnog zdravlja</span>
         </div>
+        <div className="flex flex-col md:flex-row gap-14 items-center justify-center">
+          <div className="">
+            <Image
+              src={"/33111440_2027838250808728_2028944715293917184_n.jpg"}
+              width={400}
+              height={400}
+              alt="svi na vagu"
+              className="w-full aspect-square object-cover rounded-xl"
+            />
+          </div>
+          <div>
+          
+            <ul className="list-disc list-inside space-y-1 text-gray-800 text-sm md:text-base">
+              <li>Osnivač i predsednik Udruženja SVI NA VAGU 2018</li>
+              <li>Organizator manifestacije “Dan zdravih navika” 2017</li>
+              <li>Stručni urednik časopisa “Smršaj zdravo” 2018 -2020</li>
+              <li>Stručni konsultant Doma Zdravlja “Jedro” 2017</li>
+              <li>Predsednik udruženja Dijetetičara Srbije 2016 – 2019</li>
+              <li>Stručni saradnik Festivala Zdravlja Beograd 2009</li>
+              <li>Predavač u Školi roditeljstva Nada Lazić 2015</li>
+              <li>Predavač u Udruženju Roditelj 2005</li>
+              <li>Nutricionista u DZ Palilula, Preventivni Centar 2003 – 2020</li>
+              <li>Stručni saradnik časopisa Mama, U Zdravom telu i Politika 2003</li>
+              <li>Urednik časopisa “Hrana kao lek” 1997</li>
+              <li>Urednik emisije ,,Nešto obavezno i neobavezno”, TV Pink 1992</li>
+              <li>Polivalentna patronažna služba DZ Voždovac 1978</li>
+              <li>Organizator projekta „Zdrav svaki dan“ za đake osnovnih škola (1-4 razreda) 2021</li>
+              <li>Organizator projekta Zagrizi zdravo za đake osnovnih škola (4-8 razred)</li>
+              <li>Organizator akcije „Humanitarne jelke“: „Zdravko“, „Vakcinko“, „Sportiko“, „Zubko“ 2020</li>
+            </ul>
+          </div>
+        </div>
+            <div className="mt-8 flex flex-col md:flex-row justify-around gap-2 text-center">
+              <a href="https://msbeograd.com/doctor/milka-raicevic/" target="_blank" rel="noopener noreferrer" className="text-primary underline hover:text-primary/80 font-semibold  border border-primary rounded-lg px-5 py-1.5 bg-white/60" >Profil na msbeograd.com</a>
+              <a href="https://strucnjacizaishranu.com/nutricionisti-dijeteticari/beograd/milka-raicevic/" target="_blank" rel="noopener noreferrer" className="text-primary underline hover:text-primary/80 font-semibold  border border-primary rounded-lg px-5 py-1.5 bg-white/60">Profil na strucnjacizaishranu.com</a>
+            </div>
       </div>
       <h2>Šta želimo da postignemo?</h2>
       <p className="first-letter:pl-6">

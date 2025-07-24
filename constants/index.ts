@@ -16,6 +16,18 @@ export const navList = [
     link: "/o-nama",
   },
   {
+    title: "Članci",
+    link: "/clanci",
+  },
+  {
+    title: "Video galerija",
+    link: "/video-galerija",
+  },
+  {
+    title: "Galerija",
+    link: "/galerija",
+  },
+  {
     title: "Kontakt",
     link: "/kontakt",
   },

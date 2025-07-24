@@ -18,7 +18,7 @@ const Hero = () => {
       <div className="relative container px-2 md:px-4 mx-auto  flex flex-col gap-6 items-center justify-center z-[1] ">
         <h1 className="text-muted md:text-7xl text-xl px-4 text-center">
           Udruženje{" "}
-          <span className="text-primary font-semibold text-2xl md:text-8xl">
+          <span className=" font-extrabold text-2xl md:text-8xl">
             Svi na vagu
           </span>{" "}
           - Vaš prvi korak ka zdravlju
