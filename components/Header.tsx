@@ -12,7 +12,6 @@ import {
   SheetTrigger,
 } from "@/components/ui/sheet";
 import { motion } from "framer-motion";
-import { useEffect, useState } from "react";
 import { navList } from "@/constants/index";
 
 const mobTitleStyles = "text-lg py-2";
@@ -64,28 +63,11 @@ const DesktopNav = () => (
 );
 
 export default function Header() {
-  const [scrolled, setScrolled] = useState(false);
 
-  useEffect(() => {
-    const HandleScroll = () => {
-      if (window.scrollY > 0) setScrolled(true);
-      else setScrolled(false);
-    };
-
-    document.addEventListener("scroll", HandleScroll);
-
-    return () => {
-      document.removeEventListener("scroll", HandleScroll);
-    };
-  }, []);
 
   return (
     <header
-      className={`flex justify-center ${
-        scrolled
-          ? "bg-background/95 backdrop-blur text-primary supports-[backdrop-filter]:bg-background/60 shadow-md"
-          : "bg-transparent text-white"
-      }  fixed top-0 left-0 right-0 z-[10] transition-colors`}
+      className={`flex justify-center bg-background/95 backdrop-blur text-primary supports-[backdrop-filter]:bg-background/60 shadow-md fixed top-0 left-0 right-0 z-[10] transition-colors`}
     >
       <nav className="flex items-center justify-between px-8 py-4 max-w-[80rem] w-full font-bold">
         <Link href="/" className="">
@@ -104,9 +86,7 @@ export default function Header() {
               color: "hsl(var(--foreground))",
               backgroundColor: "hsl(var(--primary))",
             }}
-            className={`items-center justify-center rounded-full ${
-              scrolled ? "border-primary" : "border-white"
-            } border-2 text-sm md:text-lg py-1 px-2 md:py-2 md:px-4 transition-colors flex`}
+            className={`items-center justify-center rounded-full border-primary border-2 text-sm md:text-lg py-1 px-2 md:py-2 md:px-4 transition-colors flex`}
           >
             <PhoneIcon />
             <p className="">+38160 000 000</p>
