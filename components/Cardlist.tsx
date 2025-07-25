@@ -4,11 +4,21 @@ import React from "react";
 import { workList } from "@/constants/index";
 import { motion } from "framer-motion";
 import { Card, CardHeader, CardTitle, CardContent } from "./ui/card";
+import Image from "@/node_modules/next/image";
 
 const Cardlist = () => {
   return (
-    <div className="py-6 md:py-20">
-      <div className="container px-2 md:px-4 mx-auto space-y-6 md:space-y-10">
+    <div className="py-6 md:py-20 relative">
+      {/* <div className="absolute top-0 left-0 w-full h-full bg-black/20 z-[1]" /> */}
+      <Image
+        src={"/hrana.png"}
+        width={500}
+        height={500}
+        alt=""
+        className="absolute top-0 w-full h-full z-0 object-cover"
+      />
+
+      <div className="container relative px-2 md:px-4 mx-auto space-y-6 md:space-y-10 z-[1]">
         <h2 className="text-4xl md:text-6xl">Šta nudimo?</h2>
         <p></p>
         <div className=" flex flex-col gap-4 md:gap-6 overflow-hidden">

@@ -11,7 +11,7 @@ const PozoviteNasOdmah = () => {
           <p>Želite da znate više o svom telesnom sastavu?</p>
           <p>Niste sigurni kako da započnete promene?</p>
           <p>Potrebna vam je stručna, ali ljudska podrška?</p>
-          <p className="text-2xl md:text-4xl text-primary">
+          <p className="text-2xl md:text-4xl">
             Pridružite se udruženju “{" "}
             <span className="font-bold">Svi na vagu</span> ”! Zakažite besplatno
             savetovanje i napravite prvi korak ka zdravlju.
