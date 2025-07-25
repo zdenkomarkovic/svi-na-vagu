@@ -7,12 +7,10 @@ const Cards2 = ({
   title,
   data,
   text,
-  cols,
 }: {
   title: string;
   data: Cards2Data[];
   text: string[];
-  cols: number;
 }) => {
   return (
     <div className="">
