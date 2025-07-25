@@ -17,10 +17,10 @@ const Cards2 = ({
       <div className="container md:px-4 mx-auto py-10 md:py-16 border-t-2 space-y-3 md:space-y-10">
         <h2 className="">{title}</h2>
         <div className="grid md:grid-cols-2 items-center justify-between bg-[hsl(34,50%,94%)] rounded-xl overflow-hidden">
-          <div className="text-center space-y-3 px-2 md:px-10">
+          <div className="text-center space-y-2 px-2 md:px-6">
             {text.map((text, i) => {
               return (
-                <p key={i} className=" py-3">
+                <p key={i} className="">
                   {text}
                 </p>
               );
@@ -55,9 +55,7 @@ const OneCard = ({ item }: { item: Cards2Data }) => {
     <Card className="h-full">
       <CardContent className=" flex gap-3 items-center justify-center">
         <p className="">{item.title}</p>
-        <p className="text-3xl md:text-4xl pr-5 font-semibold text-primary">
-          ?
-        </p>{" "}
+        <p className="text-3xl md:text-4xl  font-semibold text-primary">?</p>
       </CardContent>
     </Card>
   );
