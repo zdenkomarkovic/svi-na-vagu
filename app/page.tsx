@@ -25,8 +25,8 @@ export default function Home() {
       <PozoviteNasOdmah />
       <Statistika />
       <Cardlist />
-      <BackgroundImage />
       <CardWithImage />
+      <BackgroundImage />
       <VideoCard />
     </div>
   );
