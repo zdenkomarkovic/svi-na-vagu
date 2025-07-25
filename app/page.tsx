@@ -15,12 +15,7 @@ export default function Home() {
     <div className="">
       <HeroOneImg />
       <About2 />
-      <Cards2
-        title={"Naša misija"}
-        data={cards2Data}
-        text={cards2DataText}
-        cols={4}
-      />
+      <Cards2 title={"Naša misija"} data={cards2Data} text={cards2DataText} />
       <Manifestacije />
       <PozoviteNasOdmah />
       <Statistika />
