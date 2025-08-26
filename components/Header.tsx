@@ -73,7 +73,7 @@ export default function Header() {
         <Link href="/" className="">
           <Image
             src={Logo}
-            alt="dm rustic 24"
+            alt="svi na vagu"
             width={50}
             height={50}
             className="rounded-full"

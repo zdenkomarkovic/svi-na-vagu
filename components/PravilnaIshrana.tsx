@@ -98,7 +98,7 @@ const PravilnaIshrana = () => {
               <div className="space-y-4">
                 <p className="text-lg leading-relaxed">
                   <span className="font-bold text-primary">Kalorije su mera za energiju</span> koju hrana i piće daju našem telu. 
-                  One se koriste kao „gorivo" za sve telesne funkcije – od disanja i rada srca do hodanja i razmišljanja.
+                  One se koriste kao &quot;gorivo&quot; za sve telesne funkcije – od disanja i rada srca do hodanja i razmišljanja.
                 </p>
                 <p className="text-lg leading-relaxed">
                   <span className="font-bold text-primary">Hrana sa više kalorija</span> daje više energije, ali višak koji ne potrošimo 
@@ -120,7 +120,7 @@ const PravilnaIshrana = () => {
             
             <div className="mt-8 text-center">
               <p className="text-xl font-semibold text-primary italic">
-                "Kalorije iz hrane su energija koje telo koristi za rad i život."
+              &quot;Kalorije iz hrane su energija koje telo koristi za rad i život.&quot;
               </p>
             </div>
           </motion.div>
