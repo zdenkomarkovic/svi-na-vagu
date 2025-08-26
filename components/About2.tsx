@@ -1,5 +1,5 @@
 "use client";
-import Image from "@/node_modules/next/image";
+
 import React from "react";
 import { motion } from "framer-motion";
 
