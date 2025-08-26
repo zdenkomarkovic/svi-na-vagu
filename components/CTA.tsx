@@ -57,7 +57,7 @@ const CTA = () => {
                 href="mailto:milkaraicevic54@gmail.com"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
-                className="flex items-center justify-center gap-3 bg-secondary text-primary rounded-xl py-4 px-6 "
+                className="flex items-center justify-center gap-3 border-2 border-primary text-primary rounded-xl py-4 px-6 "
               >
                 <MailIcon className="w-6 h-6" />
                 <span className="font-semibold text-lg">Pošaljite poruku</span>
