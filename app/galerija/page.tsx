@@ -3,6 +3,15 @@ import Image from "next/image";
 
 // Automatski generisana lista slika iz public/images
 const images = [
+  // Nove slike
+  "IMG-027e442f8a7ab23e4888092424edbcdb-V.jpg",
+  "IMG-a69c554c6276aae7f7060c60f42553c1-V.jpg",
+  "IMG-84bd4da1fa9d13dbee20aac487f168fc-V.jpg",
+  "IMG-369c8ee6e87472a9691b0a565906ff65-V.jpg",
+  "IMG-055a4c88646840b2d914938cd3b26dfd-V.jpg",
+  "IMG-00bd3ff26ad1335284a787f50dc1a5df-V.jpg",
+  "IMG-ed2631868b90c5b4e3a9f88c2899828d-V.jpg",
+  // Postojeće slike
   "downloadgram.org_486572832_640499948732415_5725013419407489923_n.jpg",
   "downloadgram.org_464076821_853772746740051_246370970496493474_n.jpg",
   "downloadgram.org_486570965_639305288851881_1584740802400034770_n.jpg",
@@ -30,6 +39,8 @@ const videos = [
   "downloadgram.org_AQNQKrIFknUF_j10w04-N_xaGtKQYTSxfkgtFreWJFahYVss-Yp3ZqvWxX76MwqDkKtfwJEdMH8iH1k1yu9vp-9RS_mAQtxhx-OMG6s.mp4",
   "downloadgram.org_AQPU1wLnUNtXkjFDpS0tWatyab4psO89eqhV1EZUitvaSB-XZNImxTuRjO0tKNaTl5ywQT_Fo6Uljf6SGh3bQKY_7Dv1PUV0mR04OtU.mp4",
   "AQPQCSJjPmMZcwxo5HmrNukviexZosIMmVmIq9j-azsqcEQt5dGoPyygfo5Q2esTFFrfurN7SIQA-K8NCk5Ib02SnH-vK9tr.mp4",
+  "downloadgram.org_AQN45DdwTa-s1PBSH-FjP4i8JwACGzVGvxNl1_kR6ECbKfHmRsPAUgq9EY68K8NFpU1ozU6Jt7Ge-Bu-g9ypKLyGzjms_Vl5EPEUDss.mp4",
+  "downloadgram.org_AQM0udJDDtBrbG1WZ7xx-LUplZxerKoqZbfGNP1n-oCxS6NPHugF0A1w1w2HQQsKD46LZI3ChJ44aeLYxZEvBxo1PY40GLnitXlOf5E.mp4",
 ];
 
 const GalerijaPage = () => {

@@ -59,45 +59,45 @@ export default function Contact() {
     <div className="">
       <div className="container mx-auto pt-28 pb-16 px-6 md:px-8 md:py-32 space-y-12 md:space-y-24">
         <h1 className="text-2xl md:text-5xl pl-2 md:px-32">
-          Kontakt starter manikam
+          Kontakt Svi Na Vagu
         </h1>
         <div className="grid grid-cols-1 md:grid-cols-2 items-center gap-10">
           <div className=" mx-2 md:mx-20">
             <div className="space-y-3 md:space-y-10 text-lg md:text-2xl">
               <a
-                href="tel:+3816"
+                href="tel:+381637794985"
                 className="py-[7px] flex border-b-[1px] border-primary"
               >
                 <button className="hover:scale-110 transition-transform duration-500 px-4 md:px-8 flex gap-4 items-center">
                   <FaPhone className="text-[20px] lg:text-[30px]" />
-                  +38160 000 000
+                  +381 63 77 94 985
                 </button>
               </a>
               <a
-                href="viber://chat?number=%2B3816"
+                href="viber://chat?number=%2B381637794985"
                 className="py-[7px] flex border-b-[1px] border-primary"
               >
                 <button className="hover:scale-110 transition-transform duration-500 px-4 md:px-8 flex gap-4 items-center">
                   <FaViber className="text-[28px] lg:text-[35px] p-1 bg-purple-600 text-white rounded-xl rounde" />{" "}
-                  +38160 000 000
+                  +381 63 77 94 985
                 </button>
               </a>
               <a
-                href="https://wa.me/3816"
+                href="https://wa.me/381637794985"
                 className="py-[7px] flex border-b-[1px] border-primary"
               >
                 <button className="hover:scale-110 transition-transform duration-500 px-4 md:px-8 flex gap-4 items-center">
                   <FaWhatsappSquare className="text-[30px] lg:text-[35px] rounded-2xl text-green-700 " />{" "}
-                  +38160 000 000
+                  +381 63 77 94 985
                 </button>
               </a>
               <a
-                href="mailto:"
+                href="mailto:milkaraicevic54@gmail.com"
                 className="py-[7px] flex border-b-[1px] border-primary"
               >
                 <button className="hover:scale-110 transition-transform duration-500 px-4 md:px-8 flex gap-4 items-center">
                   <Mail className=" w-[28px] h-[28px]" />{" "}
-                  startermanikam@gmail.com
+                  milkaraicevic54@gmail.com
                 </button>
               </a>
               <a
@@ -217,8 +217,7 @@ export default function Contact() {
             </Form>
           </div>
         </div>
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d92892.91707130236!2d21.810959218314256!3d43.316276176269426!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4755b0c240c81f65%3A0x56319fe3122ac3cd!2zTmnFoQ!5e0!3m2!1sen!2srs!4v1738712533479!5m2!1sen!2srs"
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d53856.771275208346!2d20.395479922210317!3d44.81142097530135!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x475a7aa3d7b53fbd%3A0x1db8645cf2177ee4!2sBelgrade!5e0!3m2!1sen!2srs!4v1756246881278!5m2!1sen!2srs"
           width="600"
           height="450"
           style={{ border: "0" }}

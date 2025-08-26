@@ -28,7 +28,7 @@ const Hero = () => {
           edukaciju, merenje i podršku u borbi protiv gojaznosti.
         </h2>
         <div className="flex flex-col gap-4 md:flex-row">
-          <a href="tel:+3816000000">
+          <a href="tel:+381637794985">
             <motion.button
               whileHover={{ translateY: "-5px" }}
               whileTap={{ scale: 0.95 }}

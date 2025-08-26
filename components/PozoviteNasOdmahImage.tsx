@@ -24,7 +24,7 @@ const PozoviteNasOdmah = () => {
             </h2>
             <p className="text-3xl">Šlep služba Purić Čačak</p>
           </div>
-          <a href="tel:+381659480700">
+          <a href="tel:+381637794985">
             <motion.button
               whileHover={{ translateY: "-5px" }}
               whileTap={{ scale: 0.95 }}
