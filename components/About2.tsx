@@ -2,6 +2,7 @@
 
 import React from "react";
 import { motion } from "framer-motion";
+import Image from "@/node_modules/next/image";
 
 const About2 = () => {
   return (
@@ -42,15 +43,12 @@ const About2 = () => {
           viewport={{ once: true }}
           className="rounded-3xl overflow-hidden  md:w-1/3"
         >
-          <video
-            src="/downloadgram.org_AQOeesYf9veKd0Pkn2vFlv-XPTkCv2AOCX5-_mIem_yCItPHuxvA1I5oV2P6ww4Ms8I5xxdJLLgvVemEULe3d50py44b2TirLu1NFnQ.mp4"
-            autoPlay
-            muted
-            loop
-            playsInline
-            controls
-            className="object-cover w-full h-full aspect-[9/13]"
-            style={{ background: 'black' }}
+          <Image
+            src={"/IMG-6acd0c610d6a18f63a1cc2f2bf36b53e-V (1).jpg"}
+            width={1000}
+            height={1000}
+            alt="svi-na-vagu"
+            className="aspect-square object-cover"
           />
         </motion.div>
       </div>
