@@ -26,6 +26,7 @@ const images = [
 ];
 
 const videos = [
+  "/downloadgram.org_AQOeesYf9veKd0Pkn2vFlv-XPTkCv2AOCX5-_mIem_yCItPHuxvA1I5oV2P6ww4Ms8I5xxdJLLgvVemEULe3d50py44b2TirLu1NFnQ.mp4",
   "downloadgram.org_AQMI5QmmzjVhVEbmxqfMW2wcRnGPIUIupPHXznaN2471yHOq6pTg6jqug0Itt54ymBRjzSa8mHKrhKFnO1GmpA4WiZcQ4LNn_bo__7k.mp4",
   "downloadgram.org_AQM749EqkJzhpzpwkobElId8_Bongo5UPiHNacTrSSd2xLgIakHgAJZw-nV7ux9rcfKdvGZqnd628UqWx0fN3XirzIPUntzOtwuLyJk.mp4",
   "downloadgram.org_AQOvlUcBiZH0Fsc-qh2BXMNInbq3Ly8K3DX6tYMVtYKJidOzdc0mHNkeOTKOtU1Myni-Flu5wCxC9O4bzn9Qi3z6ui_3MVFZDWYAhAk.mp4",
@@ -46,10 +47,15 @@ const videos = [
 const GalerijaPage = () => {
   return (
     <div className="container mx-auto px-2 md:px-4 py-24">
-      <h1 className="text-4xl font-bold text-center mb-10 text-primary">Galerija</h1>
+      <h1 className="text-4xl font-bold text-center mb-10 text-primary">
+        Galerija
+      </h1>
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 max-w-5xl mx-auto justify-center flex-wrap">
         {images.map((img, idx) => (
-          <div key={"img-"+idx} className="flex flex-col items-center min-w-0 max-w-full">
+          <div
+            key={"img-" + idx}
+            className="flex flex-col items-center min-w-0 max-w-full"
+          >
             <div className="relative w-[320px] h-[400px] rounded-xl overflow-hidden shadow-lg bg-black mb-4 flex items-center justify-center min-w-0 max-w-full">
               <Image
                 src={`/images/${img}`}
@@ -63,13 +69,16 @@ const GalerijaPage = () => {
           </div>
         ))}
         {videos.map((vid, idx) => (
-          <div key={"vid-"+idx} className="flex flex-col items-center min-w-0 max-w-full">
+          <div
+            key={"vid-" + idx}
+            className="flex flex-col items-center min-w-0 max-w-full"
+          >
             <div className="relative w-[320px] h-[400px] rounded-xl overflow-hidden shadow-lg bg-black mb-4 flex items-center justify-center min-w-0 max-w-full">
               <video
                 src={`/images/${vid}`}
                 controls
                 className="object-cover w-full h-full"
-                style={{ background: 'black' }}
+                style={{ background: "black" }}
               />
             </div>
           </div>
@@ -79,4 +88,4 @@ const GalerijaPage = () => {
   );
 };
 
-export default GalerijaPage; 
+export default GalerijaPage;
