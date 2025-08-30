@@ -48,7 +48,7 @@ const About2 = () => {
             width={1000}
             height={1000}
             alt="svi-na-vagu"
-            className="aspect-square object-cover"
+            className="aspect-[4/5] object-cover"
           />
         </motion.div>
       </div>
