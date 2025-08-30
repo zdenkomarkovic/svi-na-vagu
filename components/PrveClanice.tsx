@@ -16,7 +16,7 @@ const PrveClanice = () => {
             Prve članice udruženja
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            One su bile prve članice Udruženja "Svi na vagu" - tada studenti, danas uspešni nutricionisti
+            One su bile prve članice Udruženja &quot;Svi na vagu&quot; - tada studenti, danas uspešni nutricionisti
           </p>
         </div>
         
@@ -42,7 +42,7 @@ const PrveClanice = () => {
         <div className="text-center">
           <div className="bg-white rounded-xl shadow-lg p-8 max-w-4xl mx-auto">
             <h3 className="text-2xl font-bold text-gray-800 mb-6">
-              Prve članice udruženja "Svi na vagu"
+              Prve članice udruženja &quot;vi na vagu&quot;
             </h3>
             <div className="text-lg text-gray-700 space-y-2">
               <p>• Milica Kovacevic</p>
