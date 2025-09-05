@@ -1,4 +1,4 @@
-﻿import ButtonToTop from "@/components/ButtonToTop";
+import ButtonToTop from "@/components/ButtonToTop";
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import type { Metadata } from "next";
@@ -16,8 +16,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Svi na vagu - Udruženje za prevenciju gojaznosti | Milka Raičević",
-  description: "Udruženje 'Svi na vagu' pruža besplatnu stručnu pomoć, edukaciju o pravilnoj ishrani i merenje telesnog sastava. Osnivač Milka Raičević, nutricionista i aromaterapeut, vodi vas kroz proces usvajanja zdravih životnih navika.",
+  title: "Svi na vagu - Udru�enje za prevenciju gojaznosti | Milka Raicevic",
+  description: "Udru�enje 'Svi na vagu' pru�a besplatnu strucnu pomoc, edukaciju o pravilnoj ishrani i merenje telesnog sastava. Osnivac Milka Raicevic, nutricionista i aromaterapeut, vodi vas kroz proces usvajanja zdravih �ivotnih navika.",
   icons: {
     icon: "/android-chrome-192x192.png",
     apple: "/apple-touch-icon.png",
@@ -27,13 +27,13 @@ export const metadata: Metadata = {
     "prevencija gojaznosti", 
     "pravilna ishrana", 
     "nutricionista", 
-    "Milka Raičević", 
+    "Milka Raicevic", 
     "merenje telesnog sastava", 
-    "zdrave životne navike", 
+    "zdrave �ivotne navike", 
     "aromatoterapija", 
     "edukacija o zdravlju", 
     "besplatno savetovanje", 
-    "udruženje", 
+    "udru�enje", 
     "zdravlje", 
     "ishrana", 
     "dijeta"
