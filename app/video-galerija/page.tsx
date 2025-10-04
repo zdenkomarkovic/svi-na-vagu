@@ -335,7 +335,7 @@ const InstagramReelEmbed = ({ url, title }: { url: string; title: string }) => {
 
 const ITEMS_PER_PAGE = 9;
 
-const page = () => {
+const Page = () => {
   const [currentPage, setCurrentPage] = useState(1);
 
   // Izračunavanje paginacije
@@ -424,4 +424,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Page;
