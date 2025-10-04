@@ -2,6 +2,7 @@
 
 import React, { useState } from "react";
 import Image from "next/image";
+import { Button } from "@/components/ui/button";
 
 const videoData = [
   { url: "https://youtu.be/l_rSTy4tcE8", title: "", type: "youtube" },
@@ -332,14 +333,24 @@ const InstagramReelEmbed = ({ url, title }: { url: string; title: string }) => {
   );
 };
 
+const ITEMS_PER_PAGE = 9;
+
 const page = () => {
+  const [currentPage, setCurrentPage] = useState(1);
+
+  // Izračunavanje paginacije
+  const totalPages = Math.ceil(videoData.length / ITEMS_PER_PAGE);
+  const startIndex = (currentPage - 1) * ITEMS_PER_PAGE;
+  const endIndex = startIndex + ITEMS_PER_PAGE;
+  const currentVideos = videoData.slice(startIndex, endIndex);
+
   return (
     <div className="container mx-auto px-2 md:px-4 py-24">
       <h1 className="text-4xl font-bold text-center mb-10 text-primary">
         Video Galerija
       </h1>
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
-        {videoData.map((video, idx) => {
+        {currentVideos.map((video, idx) => {
           if (video.type === "youtube") {
             const id = getYoutubeId(video.url);
             return id ? (
@@ -384,6 +395,31 @@ const page = () => {
           }
         })}
       </div>
+
+      {/* Paginacija */}
+      {totalPages > 1 && (
+        <div className="flex justify-center items-center gap-4 mt-12">
+          <Button
+            onClick={() => setCurrentPage((prev) => Math.max(prev - 1, 1))}
+            disabled={currentPage === 1}
+            variant="outline"
+          >
+            Prethodna
+          </Button>
+          <span className="text-sm">
+            Strana {currentPage} od {totalPages}
+          </span>
+          <Button
+            onClick={() =>
+              setCurrentPage((prev) => Math.min(prev + 1, totalPages))
+            }
+            disabled={currentPage === totalPages}
+            variant="outline"
+          >
+            Sledeća
+          </Button>
+        </div>
+      )}
     </div>
   );
 };
