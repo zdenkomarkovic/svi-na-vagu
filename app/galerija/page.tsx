@@ -1,5 +1,8 @@
-import React from "react";
+"use client";
+
+import React, { useState } from "react";
 import Image from "next/image";
+import { Button } from "@/components/ui/button";
 
 // Automatski generisana lista slika iz public/images
 const images = [
@@ -47,45 +50,124 @@ const videos = [
   "downloadgram.org_AQMbDhVu3yZ05UVRoumlKpKbUOzfwbGhIf-2xT8to00dnfxgOUVoDLFKIn5XM7Ade_DYp4WE-qd10PmqOVhO_zL9FuarWDR2wz5LyXs.mp4",
 ];
 
+const ITEMS_PER_PAGE = 6;
+
 const GalerijaPage = () => {
+  const [imagePage, setImagePage] = useState(1);
+  const [videoPage, setVideoPage] = useState(1);
+
+  // Izračunavanje za slike
+  const totalImagePages = Math.ceil(images.length / ITEMS_PER_PAGE);
+  const startImageIndex = (imagePage - 1) * ITEMS_PER_PAGE;
+  const endImageIndex = startImageIndex + ITEMS_PER_PAGE;
+  const currentImages = images.slice(startImageIndex, endImageIndex);
+
+  // Izračunavanje za video zapise
+  const totalVideoPages = Math.ceil(videos.length / ITEMS_PER_PAGE);
+  const startVideoIndex = (videoPage - 1) * ITEMS_PER_PAGE;
+  const endVideoIndex = startVideoIndex + ITEMS_PER_PAGE;
+  const currentVideos = videos.slice(startVideoIndex, endVideoIndex);
+
   return (
     <div className="container mx-auto px-2 md:px-4 py-24">
       <h1 className="text-4xl font-bold text-center mb-10 text-primary">
         Galerija
       </h1>
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 max-w-5xl mx-auto justify-center flex-wrap">
-        {images.map((img, idx) => (
-          <div
-            key={"img-" + idx}
-            className="flex flex-col items-center min-w-0 max-w-full"
-          >
-            <div className="relative w-[320px] h-[400px] rounded-xl overflow-hidden shadow-lg bg-black mb-4 flex items-center justify-center min-w-0 max-w-full">
-              <Image
-                src={`/images/${img}`}
-                alt={`Galerija slika ${idx + 1}`}
-                fill
-                className="object-cover"
-                sizes="320px"
-                priority={false}
-              />
+
+      {/* Sekcija za slike */}
+      <div className="mb-16">
+        <h2 className="text-3xl font-bold mb-6 text-primary">Slike</h2>
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 max-w-5xl mx-auto justify-center flex-wrap">
+          {currentImages.map((img, idx) => (
+            <div
+              key={"img-" + idx}
+              className="flex flex-col items-center min-w-0 max-w-full"
+            >
+              <div className="relative w-[320px] h-[400px] rounded-xl overflow-hidden shadow-lg bg-black mb-4 flex items-center justify-center min-w-0 max-w-full">
+                <Image
+                  src={`/images/${img}`}
+                  alt={`Galerija slika ${startImageIndex + idx + 1}`}
+                  fill
+                  className="object-cover"
+                  sizes="320px"
+                  priority={false}
+                />
+              </div>
             </div>
+          ))}
+        </div>
+
+        {/* Paginacija za slike */}
+        {totalImagePages > 1 && (
+          <div className="flex justify-center items-center gap-4 mt-8">
+            <Button
+              onClick={() => setImagePage((prev) => Math.max(prev - 1, 1))}
+              disabled={imagePage === 1}
+              variant="outline"
+            >
+              Prethodna
+            </Button>
+            <span className="text-sm">
+              Strana {imagePage} od {totalImagePages}
+            </span>
+            <Button
+              onClick={() =>
+                setImagePage((prev) => Math.min(prev + 1, totalImagePages))
+              }
+              disabled={imagePage === totalImagePages}
+              variant="outline"
+            >
+              Sledeća
+            </Button>
           </div>
-        ))}
-        {videos.map((vid, idx) => (
-          <div
-            key={"vid-" + idx}
-            className="flex flex-col items-center min-w-0 max-w-full"
-          >
-            <div className="relative w-[320px] h-[400px] rounded-xl overflow-hidden shadow-lg bg-black mb-4 flex items-center justify-center min-w-0 max-w-full">
-              <video
-                src={`/images/${vid}`}
-                controls
-                className="object-cover w-full h-full"
-                style={{ background: "black" }}
-              />
+        )}
+      </div>
+
+      {/* Sekcija za video zapise */}
+      <div>
+        <h2 className="text-3xl font-bold mb-6 text-primary">Video zapisi</h2>
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 max-w-5xl mx-auto justify-center flex-wrap">
+          {currentVideos.map((vid, idx) => (
+            <div
+              key={"vid-" + idx}
+              className="flex flex-col items-center min-w-0 max-w-full"
+            >
+              <div className="relative w-[320px] h-[400px] rounded-xl overflow-hidden shadow-lg bg-black mb-4 flex items-center justify-center min-w-0 max-w-full">
+                <video
+                  src={`/images/${vid}`}
+                  controls
+                  className="object-cover w-full h-full"
+                  style={{ background: "black" }}
+                />
+              </div>
             </div>
+          ))}
+        </div>
+
+        {/* Paginacija za video zapise */}
+        {totalVideoPages > 1 && (
+          <div className="flex justify-center items-center gap-4 mt-8">
+            <Button
+              onClick={() => setVideoPage((prev) => Math.max(prev - 1, 1))}
+              disabled={videoPage === 1}
+              variant="outline"
+            >
+              Prethodna
+            </Button>
+            <span className="text-sm">
+              Strana {videoPage} od {totalVideoPages}
+            </span>
+            <Button
+              onClick={() =>
+                setVideoPage((prev) => Math.min(prev + 1, totalVideoPages))
+              }
+              disabled={videoPage === totalVideoPages}
+              variant="outline"
+            >
+              Sledeća
+            </Button>
           </div>
-        ))}
+        )}
       </div>
     </div>
   );
