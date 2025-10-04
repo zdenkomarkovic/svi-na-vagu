@@ -11,6 +11,7 @@ const images = [
   "IMG-055a4c88646840b2d914938cd3b26dfd-V.jpg",
   "IMG-00bd3ff26ad1335284a787f50dc1a5df-V.jpg",
   "IMG-ed2631868b90c5b4e3a9f88c2899828d-V.jpg",
+  "20251004_191002.jpg",
   // Postojeće slike
   "downloadgram.org_486572832_640499948732415_5725013419407489923_n.jpg",
   "downloadgram.org_464076821_853772746740051_246370970496493474_n.jpg",
