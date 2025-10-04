@@ -120,6 +120,15 @@ const articles = [
     source: "Ona.rs",
     image: "/logo-ona.png",
   },
+  {
+    title:
+      "Zaboravite na proteinske čokoladice, novi trend među sportistima je - majčino mleko",
+    url: "https://rs.bloombergadria.com/politika/opste/87596/novi-trend-majcino-mleko-za-trening/news",
+    description:
+      "Iza ovog trenda ipak možda leži dublji problem i rizik po zdravlje",
+    source: "Ona.rs",
+    image: "/logo-ona.png",
+  },
 ];
 
 const ClanciPage = () => {

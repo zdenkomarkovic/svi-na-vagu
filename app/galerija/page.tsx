@@ -23,6 +23,7 @@ const images = [
   "downloadgram.org_486576202_640506918731718_8827315958634017166_n.jpg",
   "downloadgram.org_480871537_17894305797165134_880692814854646976_n.jpg",
   "downloadgram.org_499931065_683384871110589_5679318539057500218_n.jpg",
+  // "downloadgram.org_553108463_18421617601128409_5216579457744545894_n.jpg",
 ];
 
 const videos = [
@@ -42,6 +43,7 @@ const videos = [
   "AQPQCSJjPmMZcwxo5HmrNukviexZosIMmVmIq9j-azsqcEQt5dGoPyygfo5Q2esTFFrfurN7SIQA-K8NCk5Ib02SnH-vK9tr.mp4",
   "downloadgram.org_AQN45DdwTa-s1PBSH-FjP4i8JwACGzVGvxNl1_kR6ECbKfHmRsPAUgq9EY68K8NFpU1ozU6Jt7Ge-Bu-g9ypKLyGzjms_Vl5EPEUDss.mp4",
   "downloadgram.org_AQM0udJDDtBrbG1WZ7xx-LUplZxerKoqZbfGNP1n-oCxS6NPHugF0A1w1w2HQQsKD46LZI3ChJ44aeLYxZEvBxo1PY40GLnitXlOf5E.mp4",
+  "downloadgram.org_AQMbDhVu3yZ05UVRoumlKpKbUOzfwbGhIf-2xT8to00dnfxgOUVoDLFKIn5XM7Ade_DYp4WE-qd10PmqOVhO_zL9FuarWDR2wz5LyXs.mp4",
 ];
 
 const GalerijaPage = () => {
