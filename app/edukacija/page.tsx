@@ -1,5 +1,13 @@
 import React from "react";
-import { Calendar, MapPin, Clock, Users, FileText, Phone, Mail } from "lucide-react";
+import {
+  Calendar,
+  MapPin,
+  Clock,
+  Users,
+  FileText,
+  Phone,
+  Mail,
+} from "lucide-react";
 
 const page = () => {
   return (
@@ -37,11 +45,10 @@ const page = () => {
             <FileText className="w-8 h-8 text-green-600 mb-3" />
             <h3 className="font-semibold text-lg mb-2">Akreditacija</h3>
             <p className="text-sm text-gray-600">
-              Seminar je akreditovan odlukom Zdravstvenog saveta RS, br: 153-02-00131/2025-01
+              Seminar je akreditovan odlukom Zdravstvenog saveta RS, br:
+              153-02-00131/2025-01
             </p>
-            <p className="text-sm text-gray-600 mt-2">
-              Redni br: d-1-124/25
-            </p>
+            <p className="text-sm text-gray-600 mt-2">Redni br: d-1-124/25</p>
           </div>
 
           <div className="bg-white p-6 rounded-lg shadow-md border-l-4 border-blue-600">
@@ -59,7 +66,8 @@ const page = () => {
             <Users className="w-8 h-8 text-purple-600 mb-3" />
             <h3 className="font-semibold text-lg mb-2">Za kogo?</h3>
             <p className="text-sm text-gray-600">
-              Nutricioniste - dijetetičare, sanitarnoekološke inženjere, medicinske sestre, zdravstvene tehničare, studente VMŠ
+              Nutricioniste - dijetetičare, sanitarnoekološke inženjere,
+              medicinske sestre, zdravstvene tehničare, studente VMŠ
             </p>
           </div>
         </div>
@@ -69,21 +77,31 @@ const page = () => {
           <h2 className="text-3xl font-bold text-gray-900 mb-6">O seminaru</h2>
           <div className="space-y-4 text-gray-700">
             <p>
-              Simpozijum ima za cilj da stručnoj i široj javnosti ukaže na neophodnost znanja o značaju:
+              Simpozijum ima za cilj da stručnoj i široj javnosti ukaže na
+              neophodnost znanja o značaju:
             </p>
             <ul className="list-disc list-inside space-y-2 ml-4">
               <li>
-                Zastupljenosti u ishrani namirnica sa alkalizirajućim efektima i zdravstvenim benefitima
+                Zastupljenosti u ishrani namirnica sa alkalizirajućim efektima i
+                zdravstvenim benefitima
               </li>
               <li>
-                Biološki vredne hrane iz prirode i njenog prepoznavanja s jedne i štetnosti industrijski procesuiranih namirnica u ishrani, koju karakteriše savremeni način života
+                Biološki vredne hrane iz prirode i njenog prepoznavanja s jedne
+                i štetnosti industrijski procesuiranih namirnica u ishrani, koju
+                karakteriše savremeni način života
               </li>
               <li>
-                Primene različitih terapeutskih metoda unapređenja zdravlja, u zavisnosti od stanja organizma. Svrha primene ovih metoda (masaža, obloge, inhalacija, oralna primena itd.) je podsticaj organizma na balans biohemijskih procesa i jačanje imuniteta
+                Primene različitih terapeutskih metoda unapređenja zdravlja, u
+                zavisnosti od stanja organizma. Svrha primene ovih metoda
+                (masaža, obloge, inhalacija, oralna primena itd.) je podsticaj
+                organizma na balans biohemijskih procesa i jačanje imuniteta
               </li>
             </ul>
             <p className="mt-4 font-semibold text-gray-900">
-              Uključivanje "divlje hrane" u ishranu, pravilno disanje, uravnotežena fizička i psihička aktivnost, komunikacija sa prirodom - ključni su faktori očuvanja zdravlja i prevencije bolesti.
+              Uključivanje &quot;divlje hrane&quot; u ishranu, pravilno disanje,
+              uravnotežena fizička i psihička aktivnost, komunikacija sa
+              prirodom - ključni su faktori očuvanja zdravlja i prevencije
+              bolesti.
             </p>
           </div>
         </div>
@@ -92,14 +110,8 @@ const page = () => {
         <div className="bg-white rounded-lg shadow-md p-8 mb-16">
           <h2 className="text-3xl font-bold text-gray-900 mb-8">Program</h2>
           <div className="space-y-6">
-            <ProgramItem
-              time="08:30 - 09:00"
-              title="Prijava učesnika"
-            />
-            <ProgramItem
-              time="09:00 - 09:10"
-              title="Otvaranje skupa"
-            />
+            <ProgramItem time="08:30 - 09:00" title="Prijava učesnika" />
+            <ProgramItem time="09:00 - 09:10" title="Otvaranje skupa" />
             <ProgramItem
               time="09:10 - 09:50"
               title="Namirnice sa alkalizirajućim efektom – zdravstveni benefiti"
@@ -116,7 +128,9 @@ const page = () => {
               speaker="Prof dr. Anđelka Lazarević, Vanredni profesor u oblasti Javno zdravlje pri Evropskom centru za mir i razvoj"
             />
             <div className="bg-yellow-50 p-4 rounded-lg border-l-4 border-yellow-400">
-              <p className="font-semibold text-yellow-800">Pauza: 12:10 - 12:40</p>
+              <p className="font-semibold text-yellow-800">
+                Pauza: 12:10 - 12:40
+              </p>
             </div>
             <ProgramItem
               time="12:40 - 13:10"
@@ -142,10 +156,13 @@ const page = () => {
 
         {/* Organization Section */}
         <div className="bg-white rounded-lg shadow-md p-8 mb-16">
-          <h2 className="text-3xl font-bold text-gray-900 mb-6">Organizacija</h2>
+          <h2 className="text-3xl font-bold text-gray-900 mb-6">
+            Organizacija
+          </h2>
           <div className="space-y-4">
             <p className="text-gray-700">
-              <strong>Organizatori:</strong> Savet za zdravlje GO Zvezdara, Udruženje - SVI NA VAGU
+              <strong>Organizatori:</strong> Savet za zdravlje GO Zvezdara,
+              Udruženje - SVI NA VAGU
             </p>
             <p className="text-gray-700">
               <strong>Predsednica Udruženja:</strong> Milka Raičević
@@ -160,11 +177,22 @@ const page = () => {
             </div>
 
             <div className="mt-6">
-              <h3 className="font-semibold text-xl mb-4">Predstavnici nutricionista</h3>
+              <h3 className="font-semibold text-xl mb-4">
+                Predstavnici nutricionista
+              </h3>
               <ul className="space-y-2 text-gray-700">
-                <li>• Ljubiša Knežević - predsednik društva dijetetičar nutricionista SUZRS</li>
-                <li>• Rada Vejin - predsednik udruženje nutricionista dijetetičara Srbije UNDS</li>
-                <li>• Jasna Jovanović - predstavnik dijetetičara nutricionista u KMSZTS</li>
+                <li>
+                  • Ljubiša Knežević - predsednik društva dijetetičar
+                  nutricionista SUZRS
+                </li>
+                <li>
+                  • Rada Vejin - predsednik udruženje nutricionista dijetetičara
+                  Srbije UNDS
+                </li>
+                <li>
+                  • Jasna Jovanović - predstavnik dijetetičara nutricionista u
+                  KMSZTS
+                </li>
               </ul>
             </div>
           </div>
@@ -175,13 +203,17 @@ const page = () => {
           <h2 className="text-3xl font-bold mb-6">Prijava i informacije</h2>
           <div className="space-y-4">
             <p className="text-lg">
-              Prijava učešća na simpozijumu je obavezna zbog ažuriranja spiskova.
+              Prijava učešća na simpozijumu je obavezna zbog ažuriranja
+              spiskova.
             </p>
             <p className="text-lg">
-              Zainteresovani učesnici mogu se učlaniti u Udruženje. Godišnja članarina iznosi <strong>1000 RSD</strong>.
+              Zainteresovani učesnici mogu se učlaniti u Udruženje. Godišnja
+              članarina iznosi <strong>1000 RSD</strong>.
             </p>
             <div className="bg-white/10 rounded-lg p-6 mt-6">
-              <p className="text-xl font-semibold mb-4">Prijava i informacije na sajtu Udruženja:</p>
+              <p className="text-xl font-semibold mb-4">
+                Prijava i informacije na sajtu Udruženja:
+              </p>
               <a
                 href="https://www.svinavagu.rs"
                 target="_blank"
@@ -196,35 +228,53 @@ const page = () => {
 
         {/* Contact Section */}
         <div className="bg-white rounded-lg shadow-md p-8">
-          <h2 className="text-3xl font-bold text-gray-900 mb-6">Kontakt osobe</h2>
+          <h2 className="text-3xl font-bold text-gray-900 mb-6">
+            Kontakt osobe
+          </h2>
           <div className="grid md:grid-cols-2 gap-8">
             <div className="space-y-3">
-              <h3 className="font-semibold text-xl text-gray-900">Tamara Božić</h3>
+              <h3 className="font-semibold text-xl text-gray-900">
+                Tamara Božić
+              </h3>
               <div className="flex items-center gap-3 text-gray-700">
                 <Phone className="w-5 h-5 text-green-600" />
-                <a href="tel:+381638654706" className="hover:text-green-600 transition">
+                <a
+                  href="tel:+381638654706"
+                  className="hover:text-green-600 transition"
+                >
                   063 8654 706
                 </a>
               </div>
               <div className="flex items-center gap-3 text-gray-700">
                 <Mail className="w-5 h-5 text-green-600" />
-                <a href="mailto:tamarabozic333@gmail.com" className="hover:text-green-600 transition">
+                <a
+                  href="mailto:tamarabozic333@gmail.com"
+                  className="hover:text-green-600 transition"
+                >
                   tamarabozic333@gmail.com
                 </a>
               </div>
             </div>
 
             <div className="space-y-3">
-              <h3 className="font-semibold text-xl text-gray-900">Milka Raičević</h3>
+              <h3 className="font-semibold text-xl text-gray-900">
+                Milka Raičević
+              </h3>
               <div className="flex items-center gap-3 text-gray-700">
                 <Phone className="w-5 h-5 text-green-600" />
-                <a href="tel:+381637794985" className="hover:text-green-600 transition">
+                <a
+                  href="tel:+381637794985"
+                  className="hover:text-green-600 transition"
+                >
                   063 7794 985
                 </a>
               </div>
               <div className="flex items-center gap-3 text-gray-700">
                 <Mail className="w-5 h-5 text-green-600" />
-                <a href="mailto:milkaraicevic@gmail.com" className="hover:text-green-600 transition">
+                <a
+                  href="mailto:milkaraicevic@gmail.com"
+                  className="hover:text-green-600 transition"
+                >
                   milkaraicevic@gmail.com
                 </a>
               </div>
@@ -237,7 +287,15 @@ const page = () => {
 };
 
 // Component for program items
-const ProgramItem = ({ time, title, speaker }: { time: string; title: string; speaker?: string }) => (
+const ProgramItem = ({
+  time,
+  title,
+  speaker,
+}: {
+  time: string;
+  title: string;
+  speaker?: string;
+}) => (
   <div className="border-l-4 border-green-600 pl-4 py-2">
     <div className="flex flex-col md:flex-row md:items-start gap-2 md:gap-4">
       <span className="font-semibold text-green-700 min-w-[120px]">{time}</span>
