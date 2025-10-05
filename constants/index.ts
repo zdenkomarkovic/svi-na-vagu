@@ -28,6 +28,10 @@ export const navList = [
     link: "/galerija",
   },
   {
+    title: "Edukacija",
+    link: "/edukacija",
+  },
+  {
     title: "Kontakt",
     link: "/kontakt",
   },
