@@ -5,6 +5,11 @@ import Image from "next/image";
 import { Button } from "@/components/ui/button";
 
 const videoData = [
+  {
+    url: "https://www.youtube.com/watch?v=A4LZuyiEkLI",
+    title: "",
+    type: "youtube",
+  },
   { url: "https://youtu.be/l_rSTy4tcE8", title: "", type: "youtube" },
   {
     url: "https://www.youtube.com/watch?v=aIdU7GlQ8zk",
