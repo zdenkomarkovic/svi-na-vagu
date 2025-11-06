@@ -5,6 +5,15 @@ import { Button } from "@/components/ui/button";
 
 const articles = [
   {
+    title:
+      "Kvalitetan san za kvalitetno mršavljenje: Nutricionista Milka Raičević o ishrani i hidrataciji",
+    url: "https://pancevac-online.rs/421079/kvalitetan-san-za-kvalitetno-mrsavljenje-nutricionista-milka-raicevic-o-ishrani-i-hidrataciji/",
+    description:
+      "Milka Raičević, nutricionista govorila je za HappyTV o gubitku kilograma i hidrataciji tokom leta.",
+    source: "DokTok.rs",
+    image: "/logo-doktok.jpg",
+  },
+  {
     title: "Kako se zdravo hraniti na poslu",
     url: "https://www.doktok.rs/portal/kako-se-zdravo-hraniti-na-poslu",
     description:
