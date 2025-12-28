@@ -6,6 +6,7 @@ import { Button } from "@/components/ui/button";
 
 // Automatski generisana lista slika iz public/images
 const images = [
+  "20251228_123836.jpg",
   "IMG-0ff82faf711070109a0f6b153e4a4def-V.jpg",
   "IMG-1a670e71f03a45e917060b56279e8351-V.jpg",
   "IMG-1e30171cf2560fbe87c11b090b33e1f3-V.jpg",
