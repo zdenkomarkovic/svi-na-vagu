@@ -6,6 +6,31 @@ import { Button } from "@/components/ui/button";
 
 const videoData = [
   {
+    url: "https://www.youtube.com/watch?v=zfAUdvy1nAA",
+    title: "",
+    type: "youtube",
+  },
+  {
+    url: "https://www.youtube.com/watch?v=1kxTvX-ePIE",
+    title: "",
+    type: "youtube",
+  },
+  {
+    url: "https://www.youtube.com/watch?v=d9K4w_E8SQ8",
+    title: "",
+    type: "youtube",
+  },
+  {
+    url: "https://www.youtube.com/watch?v=28R34fQuwn0",
+    title: "",
+    type: "youtube",
+  },
+  {
+    url: "https://www.youtube.com/watch?v=0Jt5Oa-zWxg",
+    title: "",
+    type: "youtube",
+  },
+  {
     url: "https://www.youtube.com/watch?v=A4LZuyiEkLI",
     title: "",
     type: "youtube",
