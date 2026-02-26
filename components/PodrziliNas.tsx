@@ -20,7 +20,8 @@ const PodrziliNas = () => {
     },
     {
       ime: "Odeon pozorište",
-      slika: "/odeon.svg"
+      slika: "/odeon.svg",
+      link: "https://bilet.teatarodeon.rs/repertoar.php#danas"
     }
   ];
 
@@ -37,25 +38,42 @@ const PodrziliNas = () => {
         </div>
         
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-8">
-          {organizacije.map((org, index) => (
-            <div 
-              key={index}
-              className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 p-6 flex flex-col items-center justify-center min-h-[200px]"
-            >
-              <div className="relative h-24 w-full mb-4">
-                <Image
-                  src={org.slika}
-                  alt={org.ime}
-                  fill
-                  className="object-contain"
-                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 20vw"
-                />
+          {organizacije.map((org, index) => {
+            const cardContent = (
+              <>
+                <div className="relative h-24 w-full mb-4">
+                  <Image
+                    src={org.slika}
+                    alt={org.ime}
+                    fill
+                    className="object-contain"
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 20vw"
+                  />
+                </div>
+                <h3 className="text-sm font-semibold text-gray-800 text-center leading-tight">
+                  {org.ime}
+                </h3>
+              </>
+            );
+
+            const cardClass = "bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 p-6 flex flex-col items-center justify-center min-h-[200px]";
+
+            return org.link ? (
+              <a
+                key={index}
+                href={org.link}
+                target="_blank"
+                rel="noopener noreferrer"
+                className={cardClass}
+              >
+                {cardContent}
+              </a>
+            ) : (
+              <div key={index} className={cardClass}>
+                {cardContent}
               </div>
-              <h3 className="text-sm font-semibold text-gray-800 text-center leading-tight">
-                {org.ime}
-              </h3>
-            </div>
-          ))}
+            );
+          })}
         </div>
         
         <div className="text-center mt-12">
