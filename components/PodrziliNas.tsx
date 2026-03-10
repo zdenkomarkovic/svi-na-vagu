@@ -4,25 +4,25 @@ const PodrziliNas = () => {
   const organizacije = [
     {
       ime: "Aleksandrija Fruska Gora doo",
-      slika: "/aleksandrija.png"
+      slika: "/aleksandrija.png",
     },
     {
       ime: "Donorstvo je herojstvo",
-      slika: "/donorstvo.jpg"
+      slika: "/donorstvo.jpg",
     },
     {
       ime: "Plavi Krug",
-      slika: "/plavikrug.png"
+      slika: "/plavikrug.png",
     },
     {
       ime: "ŽENA+",
-      slika: "/zenaplus.jpg"
+      slika: "/zenaplus.jpg",
     },
     {
       ime: "Odeon pozorište",
       slika: "/odeon.svg",
-      link: "https://bilet.teatarodeon.rs/repertoar.php#danas"
-    }
+      link: "https://bilet.teatarodeon.rs/repertoar.php?cf=3442#danas",
+    },
   ];
 
   return (
@@ -33,10 +33,11 @@ const PodrziliNas = () => {
             Podržali su nas
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Zahvaljujemo se organizacijama koje su podržale naše aktivnosti i pomogle nam da ostvarimo naše ciljeve
+            Zahvaljujemo se organizacijama koje su podržale naše aktivnosti i
+            pomogle nam da ostvarimo naše ciljeve
           </p>
         </div>
-        
+
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-8">
           {organizacije.map((org, index) => {
             const cardContent = (
@@ -56,7 +57,8 @@ const PodrziliNas = () => {
               </>
             );
 
-            const cardClass = "bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 p-6 flex flex-col items-center justify-center min-h-[200px]";
+            const cardClass =
+              "bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 p-6 flex flex-col items-center justify-center min-h-[200px]";
 
             return org.link ? (
               <a
@@ -75,12 +77,10 @@ const PodrziliNas = () => {
             );
           })}
         </div>
-        
+
         <div className="text-center mt-12">
           <div className="inline-block bg-blue-100 text-blue-800 px-6 py-3 rounded-full">
-            <p className="text-sm font-medium">
-              💙 Donatorstvo je herojstvo
-            </p>
+            <p className="text-sm font-medium">💙 Donatorstvo je herojstvo</p>
           </div>
         </div>
       </div>
