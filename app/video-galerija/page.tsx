@@ -6,6 +6,36 @@ import { Button } from "@/components/ui/button";
 
 const videoData = [
   {
+    url: "https://youtu.be/9EMFOouMt_A?si=WQfAEzGu5PqQGgN1",
+    title: "",
+    type: "youtube",
+  },
+  {
+    url: "https://youtu.be/irFqy5bFbto",
+    title: "",
+    type: "youtube",
+  },
+  {
+    url: "https://www.prva.rs/video/150-minuta/105156/koliko-se-promenila-ishrana-mladih-u-srbiji",
+    title: "Koliko se promenila ishrana mladih u Srbiji?",
+    type: "custom",
+  },
+  {
+    url: "https://youtu.be/wuPGJ_UTatw",
+    title: "",
+    type: "youtube",
+  },
+  {
+    url: "https://youtu.be/xrKXdmwfjog",
+    title: "",
+    type: "youtube",
+  },
+  {
+    url: "https://youtu.be/AU1tcuyYp2I",
+    title: "",
+    type: "youtube",
+  },
+  {
     url: "https://www.youtube.com/watch?v=zfAUdvy1nAA",
     title: "",
     type: "youtube",
@@ -202,6 +232,16 @@ const videoData = [
     url: "https://adriamedia.tv/Kurir-televizija/Centralni-dnevnik/a88725/CENTRALNI-DNEVNIK-01.10.2025.html",
     title: "Od 22:20 je prilog, nitricioniste Milke Raicevic ",
     type: "",
+  },
+  {
+    url: "https://youtu.be/wuPGJ_UTatw",
+    title: "",
+    type: "youtube",
+  },
+  {
+    url: "https://youtu.be/xrKXdmwfjog",
+    title: "",
+    type: "youtube",
   },
 ];
 

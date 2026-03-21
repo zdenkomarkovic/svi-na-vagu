@@ -6,6 +6,9 @@ import { Button } from "@/components/ui/button";
 
 // Automatski generisana lista slika iz public/images
 const images = [
+  "/images1/IMG-2061514ef337fe515d37ac608e71f539-V.jpg",
+  "/images1/IMG-7620acad26fc244eb33c1e7348267938-V.jpg",
+  "/images1/IMG-a636d8ea3f9bc8bcf33f173c4188a561-V.jpg",
   "20251228_123836.jpg",
   "IMG-0ff82faf711070109a0f6b153e4a4def-V.jpg",
   "IMG-1a670e71f03a45e917060b56279e8351-V.jpg",
@@ -69,8 +72,18 @@ const images = [
   // "downloadgram.org_553108463_18421617601128409_5216579457744545894_n.jpg",
 ];
 
+const externalVideos = [
+  { embedUrl: "https://www.instagram.com/reel/DVQkEvNidhC/embed/" },
+  { embedUrl: "https://www.instagram.com/reel/DVL8qRtjFpinCG0GBwQdLyj8zGd5IeBHfZhek80/embed/" },
+  { embedUrl: "https://www.instagram.com/p/DVKCHb3DCedx1zSlDSZGiYimB0mCuQDLdK8Zmk0/embed/" },
+  { embedUrl: "https://www.instagram.com/p/DVKAb43jLmdWS0yOK4cv0nO1-kCLDZMmUWPKLg0/embed/" },
+  { embedUrl: "https://www.instagram.com/p/DVJ_smzjCbbRNJ_6uhsVc-47LlW9lIUkLIojgY0/embed/" },
+  { embedUrl: "https://www.instagram.com/p/DVKE8RsjK7WXMG45rLfq-qbxYhWJuiFyInPVZc0/embed/" },
+  { embedUrl: "https://www.instagram.com/p/DVKGkRqDAH75-dgUIuEnVNtjrLtVOob_dN2wtI0/embed/" },
+  { embedUrl: "https://www.instagram.com/reel/CukWtuDAawC/embed/" },
+];
+
 const videos = [
-  "/downloadgram.org_AQOeesYf9veKd0Pkn2vFlv-XPTkCv2AOCX5-_mIem_yCItPHuxvA1I5oV2P6ww4Ms8I5xxdJLLgvVemEULe3d50py44b2TirLu1NFnQ.mp4",
   "downloadgram.org_AQMI5QmmzjVhVEbmxqfMW2wcRnGPIUIupPHXznaN2471yHOq6pTg6jqug0Itt54ymBRjzSa8mHKrhKFnO1GmpA4WiZcQ4LNn_bo__7k.mp4",
   "downloadgram.org_AQM749EqkJzhpzpwkobElId8_Bongo5UPiHNacTrSSd2xLgIakHgAJZw-nV7ux9rcfKdvGZqnd628UqWx0fN3XirzIPUntzOtwuLyJk.mp4",
   "downloadgram.org_AQOvlUcBiZH0Fsc-qh2BXMNInbq3Ly8K3DX6tYMVtYKJidOzdc0mHNkeOTKOtU1Myni-Flu5wCxC9O4bzn9Qi3z6ui_3MVFZDWYAhAk.mp4",
@@ -124,7 +137,7 @@ const GalerijaPage = () => {
             >
               <div className="relative w-[320px] h-[400px] rounded-xl overflow-hidden shadow-lg bg-black mb-4 flex items-center justify-center min-w-0 max-w-full">
                 <Image
-                  src={`/images/${img}`}
+                  src={img.startsWith('/') ? img : `/images/${img}`}
                   alt={`Galerija slika ${startImageIndex + idx + 1}`}
                   fill
                   className="object-cover"
@@ -166,6 +179,23 @@ const GalerijaPage = () => {
       <div>
         <h2 className="text-3xl font-bold mb-6 text-primary">Video zapisi</h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 max-w-5xl mx-auto justify-center flex-wrap">
+          {externalVideos.map((ev, idx) => (
+            <div
+              key={"ext-" + idx}
+              className="flex flex-col items-center min-w-0 max-w-full"
+            >
+              <div className="relative w-[320px] h-[400px] rounded-xl overflow-hidden shadow-lg mb-4 min-w-0 max-w-full">
+                <iframe
+                  src={ev.embedUrl}
+                  className="w-full h-full"
+                  allow="autoplay; encrypted-media"
+                  allowFullScreen
+                  scrolling="no"
+                  frameBorder="0"
+                />
+              </div>
+            </div>
+          ))}
           {currentVideos.map((vid, idx) => (
             <div
               key={"vid-" + idx}

@@ -5,6 +5,13 @@ import { Button } from "@/components/ui/button";
 
 const articles = [
   {
+    title: "Zelena salata vam je uvenula u frižideru? Nutricionista otkriva trik od 2 sekunde koji joj vraća svežinu",
+    url: "https://ona.telegraf.rs/fitnes-i-zdravlje/4278413-zelena-salata-vam-je-uvenula-u-frizideru-nutricionista-otkriva-trik-od-2-sekunde-koji-joj-vraca-svezinu",
+    description: "Nutricionista Milka Raičević otkriva jednostavan trik kako da povratite svežinu uvenulog lisnatog povrća.",
+    source: "Ona Telegraf",
+    image: "/logo-ona.png",
+  },
+  {
     title:
       "Kvalitetan san za kvalitetno mršavljenje: Nutricionista Milka Raičević o ishrani i hidrataciji",
     url: "https://pancevac-online.rs/421079/kvalitetan-san-za-kvalitetno-mrsavljenje-nutricionista-milka-raicevic-o-ishrani-i-hidrataciji/",
