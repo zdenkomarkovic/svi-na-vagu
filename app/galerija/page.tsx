@@ -6,6 +6,18 @@ import { Button } from "@/components/ui/button";
 
 // Automatski generisana lista slika iz public/images
 const images = [
+  "/images2/20260507_233847.jpg",
+  "/images2/20260507_233831.jpg",
+  "/images2/20260507_233816.jpg",
+  "/images2/20260507_233756.jpg",
+  "/images2/20260507_233736.jpg",
+  "/images2/20260507_233719.jpg",
+  "/images2/20260507_233703.jpg",
+  "/images2/20260507_233647.jpg",
+  "/images2/20260507_233631.jpg",
+  "/images2/20260507_233611.jpg",
+  "/images2/20260507_233552.jpg",
+  "/images2/20260507_233506.jpg",
   "/images1/IMG-2061514ef337fe515d37ac608e71f539-V.jpg",
   "/images1/IMG-7620acad26fc244eb33c1e7348267938-V.jpg",
   "/images1/IMG-a636d8ea3f9bc8bcf33f173c4188a561-V.jpg",
@@ -73,6 +85,7 @@ const images = [
 ];
 
 const externalVideos = [
+  { embedUrl: "https://www.instagram.com/reel/DXM0cbSgt8W/embed/" },
   { embedUrl: "https://www.instagram.com/reel/DVQkEvNidhC/embed/" },
   { embedUrl: "https://www.instagram.com/reel/DVL8qRtjFpinCG0GBwQdLyj8zGd5IeBHfZhek80/embed/" },
   { embedUrl: "https://www.instagram.com/p/DVKCHb3DCedx1zSlDSZGiYimB0mCuQDLdK8Zmk0/embed/" },
@@ -143,6 +156,7 @@ const GalerijaPage = () => {
                   className="object-cover"
                   sizes="320px"
                   priority={false}
+                  unoptimized
                 />
               </div>
             </div>

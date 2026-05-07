@@ -5,6 +5,20 @@ import { Button } from "@/components/ui/button";
 
 const articles = [
   {
+    title: "Nutricionistkinja Milka Raičević za DIREKTNO upozorava: Jedna zdrava namirnica može pogoršati simptome alergije",
+    url: "https://share.google/gYVLymckexC444W0V",
+    description: "Stručnjakinja objašnjava kako brojne zdravstveno korisne namirnice – med, jagode i paradajz – mogu da pogoršaju alergijske simptome tokom sezone alergija.",
+    source: "Direktno.rs",
+    image: "",
+  },
+  {
+    title: "Beli luk kao saveznik zdravlja",
+    url: "https://www.dobrojutro.co.rs/beli-luk-kao-saveznik-zdravlja/",
+    description: "Beli luk je prirodni saveznik imunog sistema koji sadrži sumpor i deluje protiv bakterija, virusa i gljivica. Važno je konzumirati ga sirov i redovno.",
+    source: "Dobrojutro.co.rs",
+    image: "",
+  },
+  {
     title: "Zelena salata vam je uvenula u frižideru? Nutricionista otkriva trik od 2 sekunde koji joj vraća svežinu",
     url: "https://ona.telegraf.rs/fitnes-i-zdravlje/4278413-zelena-salata-vam-je-uvenula-u-frizideru-nutricionista-otkriva-trik-od-2-sekunde-koji-joj-vraca-svezinu",
     description: "Nutricionista Milka Raičević otkriva jednostavan trik kako da povratite svežinu uvenulog lisnatog povrća.",

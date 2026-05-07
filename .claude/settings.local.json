@@ -1,7 +1,13 @@
 {
   "permissions": {
     "allow": [
-      "Read(//c/Users/DELL/Documents/**)"
+      "Read(//c/Users/DELL/Documents/**)",
+      "Bash(Get-ChildItem \"F:\\\\sajtovi\\\\3-2025\\\\svi na vagu\\\\public\\\\images2\")",
+      "Bash(Select-Object Name, Length)",
+      "WebFetch(domain:www.dobrojutro.co.rs)",
+      "WebFetch(domain:share.google)",
+      "WebFetch(domain:www.google.com)",
+      "WebFetch(domain:direktno.rs)"
     ],
     "deny": [],
     "ask": []
