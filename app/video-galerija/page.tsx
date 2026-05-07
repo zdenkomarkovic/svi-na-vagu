@@ -6,9 +6,9 @@ import { Button } from "@/components/ui/button";
 
 const videoData = [
   {
-    url: "/Prejedanje (1).mp4",
+    url: "https://share.google/sC3Y7TjmhHd4fcN68",
     title: "Euronews - Prejedanje - Milka Raičević nutricionista",
-    type: "local",
+    type: "euronews",
   },
   {
     url: "https://youtu.be/9EMFOouMt_A?si=WQfAEzGu5PqQGgN1",
@@ -408,6 +408,25 @@ const InstagramReelEmbed = ({ url, title }: { url: string; title: string }) => {
   );
 };
 
+const NoLogoVideoPlaceholder = ({ url, title }: { url: string; title: string }) => {
+  return (
+    <div
+      className="w-full aspect-video rounded-lg overflow-hidden shadow-lg bg-gray-900 relative cursor-pointer group"
+      onClick={() => window.open(url, "_blank")}
+    >
+      <div className="absolute top-0 left-0 right-0 bg-gradient-to-b from-black/80 to-transparent p-3 z-10">
+        <h3 className="text-white text-sm font-semibold leading-tight">{title}</h3>
+      </div>
+      <div className="absolute inset-0 flex items-center justify-center">
+        <svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="32" cy="32" r="32" fill="rgba(0,0,0,0.5)" />
+          <polygon points="26,20 48,32 26,44" fill="#fff" />
+        </svg>
+      </div>
+    </div>
+  );
+};
+
 const LocalVideoPlayer = ({ url, title }: { url: string; title: string }) => {
   return (
     <div className="w-full aspect-video rounded-lg overflow-hidden shadow-lg bg-black relative">
@@ -442,7 +461,13 @@ const Page = () => {
       </h1>
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
         {currentVideos.map((video, idx) => {
-          if (video.type === "local") {
+          if (video.type === "euronews") {
+            return (
+              <div key={idx} className="flex flex-col items-center">
+                <NoLogoVideoPlaceholder url={video.url} title={video.title} />
+              </div>
+            );
+          } else if (video.type === "local") {
             return (
               <div key={idx} className="flex flex-col items-center">
                 <LocalVideoPlayer url={video.url} title={video.title} />
