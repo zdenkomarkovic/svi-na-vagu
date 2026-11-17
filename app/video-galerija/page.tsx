@@ -11,6 +11,7 @@ const videoData = [
     url: "https://www.facebook.com/K1gledajbezstida/videos/1621853232826444/",
     title: "K1 Televizija - Milka Raičević (Facebook)",
     type: "euronews",
+    image: "/k1-reel.jpg",
   },
   {
     url: "https://www.kurir.rs/tv/emisije/Centralni-dnevnik/100276/CENTRALNI-DNEVNIK-17.08.2026",
