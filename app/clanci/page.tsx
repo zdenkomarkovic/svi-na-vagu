@@ -5,6 +5,13 @@ import { Button } from "@/components/ui/button";
 
 const articles = [
   {
+    title: "Cela pomorandža bolja je od čaše soka",
+    url: "https://share.google/Kai2sd1qKv43LYvFM",
+    description: "Zašto je cela pomorandža zdraviji izbor od čaše soka - savet nutricioniste u emisiji Dobro jutro.",
+    source: "Dobro Jutro",
+    image: "",
+  },
+  {
     title: "Nutricionistkinja Milka Raičević za DIREKTNO upozorava: Jedna zdrava namirnica može pogoršati simptome alergije",
     url: "https://share.google/gYVLymckexC444W0V",
     description: "Stručnjakinja objašnjava kako brojne zdravstveno korisne namirnice – med, jagode i paradajz – mogu da pogoršaju alergijske simptome tokom sezone alergija.",

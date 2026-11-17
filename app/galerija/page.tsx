@@ -6,6 +6,13 @@ import { Button } from "@/components/ui/button";
 
 // Automatski generisana lista slika iz public/images
 const images = [
+  "/17.11/20261116_020022.jpg",
+  "/17.11/20261116_015912.jpg",
+  "/17.11/20261115_234601.jpg",
+  "/17.11/20261115_234548.jpg",
+  "/17.11/20261115_234537.jpg",
+  "/17.11/20261115_234315.jpg",
+  "/17.11/IMG-573151e0100b903d8869a0e9c36e643f-V.jpg",
   "/images2/20260507_233847.jpg",
   "/images2/20260507_233831.jpg",
   "/images2/20260507_233816.jpg",
@@ -85,6 +92,7 @@ const images = [
 ];
 
 const externalVideos = [
+  { embedUrl: "https://www.instagram.com/reel/CjTdkv-uqVh/embed/" },
   { embedUrl: "https://www.instagram.com/reel/DXM0cbSgt8W/embed/" },
   { embedUrl: "https://www.instagram.com/reel/DVQkEvNidhC/embed/" },
   { embedUrl: "https://www.instagram.com/reel/DVL8qRtjFpinCG0GBwQdLyj8zGd5IeBHfZhek80/embed/" },
